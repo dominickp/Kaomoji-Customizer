@@ -1,0 +1,38 @@
+<!Doctype HTML>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <title>Test Interface</title>
+    <style>
+        .customizer{
+            text-align:center;
+        }
+        #bigSmiley{
+            font-size:100px;
+            font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+        }
+        #bigSmiley .part{
+            border-bottom:10px solid #CCC;
+            padding-bottom: 20px;
+            cursor: pointer;
+            margin: 1px;
+        }
+        #bigSmiley .part:hover{
+            border-bottom:10px solid red;
+            color:#666;
+        }
+    </style>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+    <link href="//netdna.bootstrapcdn.com/bootstrap/3.0.2/css/bootstrap.min.css" rel="stylesheet">
+    <script src="//netdna.bootstrapcdn.com/bootstrap/3.0.2/js/bootstrap.min.js"></script>
+    <script src="bigsmiley.js"></script>
+</head>
+<body>
+<div class="customizer">
+    <div id="bigSmiley">
+        <span class="part" id="leftFlair">✌</span><span class="part" id="leftBracket">(</span><span class="part" id="leftEye">♥</span><span class="part" id="mouth">ヮ</span><span class="part" id="rightEye">♥ </span><span class="part" id="rightBracket">)</span><span class="part" id="rightFlair"> </span>
+    </div>
+</div>
+
+</body>
+</html>
