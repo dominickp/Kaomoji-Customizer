@@ -37,7 +37,7 @@ $(document).ready(function(){
 
         // Put those parts into the options div
         $(partsArray).each(function (key, value) {
-            var li = $(document.createElement('li'));
+            var li = $(document.createElement('li')).attr("data-pairType", pairType);
             // Treat arrays a little differently
             if (value instanceof Array) {
                 $(value).each(function(key,ind){
@@ -63,6 +63,15 @@ $(document).ready(function(){
     }, function () {
         var pairType = $(this).attr("data-pairType");
         $('*[data-pairType="' + pairType + '"]').removeClass('active');
+    });
+
+    // Update bigSmiley logic
+    $(document).on( "click", 'ul.partPicker > li', function() {
+        selectedPart = $(this).text(); // Get the part
+        selectedType = $(this).attr("data-pairType"); // Get the part's type
+        console.log(selectedPart + selectedType);
+        // Update on the big smilet
+        $('#bigSmiley *[data-pairType="' + selectedType + '"]').text(selectedPart);
     });
 
 });
