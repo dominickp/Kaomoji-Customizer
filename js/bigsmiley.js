@@ -5,6 +5,10 @@ $(document).ready(function(){
         var optionsBox = $( "div#options" );
         var pairType = $(this).attr("data-pairType"); // Get data-pairtype
 
+        $(".part").removeClass('hold');
+        $('*[data-pairType="' + pairType + '"]').addClass('hold');
+
+
         var partsList = $(document.createElement('ul')).addClass('partPicker');
 
         // Determine which parts array I should access

@@ -23,19 +23,19 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="index.html" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="index.html" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="42" column="32" selection-start="1241" selection-end="1241" vertical-scroll-proportion="-26.24" vertical-offset="16" max-vertical-offset="1360">
+            <state line="30" column="43" selection-start="951" selection-end="951" vertical-scroll-proportion="0.4377565" vertical-offset="160" max-vertical-offset="1440">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="bigsmiley.js" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="bigsmiley.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/js/bigsmiley.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="40" column="8" selection-start="1465" selection-end="1465" vertical-scroll-proportion="0.84656084" vertical-offset="0" max-vertical-offset="800">
+            <state line="19" column="37" selection-start="686" selection-end="686" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="864">
               <folding />
             </state>
           </provider>
@@ -61,8 +61,8 @@
     <option name="changedFiles">
       <list>
         <option value="$PROJECT_DIR$/js/parts.js" />
-        <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/js/bigsmiley.js" />
+        <option value="$PROJECT_DIR$/index.html" />
       </list>
     </option>
   </component>
@@ -225,16 +225,16 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/index.html">
+    <entry file="file://$PROJECT_DIR$/js/bigsmiley.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="42" column="32" selection-start="1241" selection-end="1241" vertical-scroll-proportion="-26.24" vertical-offset="16" max-vertical-offset="1360">
+        <state line="19" column="37" selection-start="686" selection-end="686" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="864">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/js/bigsmiley.js">
+    <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="40" column="8" selection-start="1465" selection-end="1465" vertical-scroll-proportion="0.84656084" vertical-offset="0" max-vertical-offset="800">
+        <state line="30" column="43" selection-start="951" selection-end="951" vertical-scroll-proportion="0.4377565" vertical-offset="160" max-vertical-offset="1440">
           <folding />
         </state>
       </provider>
