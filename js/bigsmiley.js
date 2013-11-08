@@ -3,17 +3,30 @@ $(document).ready(function(){
     // When you click on a .part, display some options
     $(".part").click(function() {
         var optionsBox = $( "div#options" );
-        var pairType = $(this).attr("data-pairType");
+        var pairType = $(this).attr("data-pairType"); // Get data-pairtype
 
-        var eyePartsList = $(document.createElement('ul'));
-        var eyeParts = ['A', 'B', 'C', 'D'];
+        var partsList = $(document.createElement('ul')).addClass('partPicker');
 
-        $(mouth_parts).each(function (key, value) {
+        // Determine which parts array I should access
+        var partsArray;
+        if(pairType == 'eye'){
+            partsArray = eye_parts;
+            partsTitle = 'Eye';
+        } else if(pairType == 'mouth'){
+            partsArray = mouth_parts;
+            partsTitle = 'Mouth';
+        } else if(pairType == 'bracket'){
+            partsArray = bracket_parts;
+            partsTitle = 'Bracket';
+        }
+
+        $(partsArray).each(function (key, value) {
             var li = $(document.createElement('li'));
             li.html(value);
-            eyePartsList.append(li);
+            partsList.append(li);
         }).promise().done(function () {
-            $('#options').append(eyePartsList);
+            $('#options').html(partsList);
+            $('#options').prepend('<h3>'+partsTitle+' parts</h3>');
         });
 
 

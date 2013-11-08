@@ -31,6 +31,19 @@
             border-bottom:10px solid red;
             color:#666;
         }
+        .partPicker{
+            list-style: none;
+            margin:0;
+            padding:0;
+        }
+        .partPicker li{
+            display:inline-block;
+            border:1px solid #999;
+            margin:0 3px;
+            margin-bottom: 10px;
+            padding:0 5px;
+            border-radius:3px;
+        }
     </style>
     <script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
     <link href="//netdna.bootstrapcdn.com/bootstrap/3.0.2/css/bootstrap.min.css" rel="stylesheet">
@@ -39,20 +52,27 @@
     <script src="js/bigsmiley.js"></script>
 </head>
 <body>
-<div class="customizer">
-    <div id="bigSmiley">
-        <span class="part paired" data-pairType="flair" id="leftFlair">✌</span>
-        <span class="part paired" data-pairType="bracket" id="leftBracket">(</span>
-        <span class="part paired" data-pairType="eye" id="leftEye">♥</span>
-        <span class="part" data-pairType="mouth" id="mouth">ヮ</span>
-        <span class="part paired" data-pairType="eye" id="rightEye">♥ </span>
-        <span class="part paired" data-pairType="bracket" id="rightBracket">)</span>
-        <span class="part paired" data-pairType="flair" id="rightFlair">&nbsp;</span>
+<div class="customizer container">
+    <div class="row">
+        <div class="col-md-12">
+            <div id="bigSmiley">
+                <span class="part paired" data-pairType="flair" id="leftFlair">✌</span>
+                <span class="part paired" data-pairType="bracket" id="leftBracket">(</span>
+                <span class="part paired" data-pairType="eye" id="leftEye">♥</span>
+                <span class="part" data-pairType="mouth" id="mouth">ヮ</span>
+                <span class="part paired" data-pairType="eye" id="rightEye">♥ </span>
+                <span class="part paired" data-pairType="bracket" id="rightBracket">)</span>
+                <span class="part paired" data-pairType="flair" id="rightFlair">&nbsp;</span>
+            </div>
+        </div>
     </div>
     <br>
     <hr>
-    <div class="clearfix"></div>
-    <div id="options">Default options</div>
+    <div class="row">
+        <div class="col-md-12">
+            <div id="options">Default options</div>
+        </div>
+    </div>
 </div>
 
 
