@@ -20,7 +20,7 @@ $(document).ready(function(){
         $('*[data-pairType="' + pairType + '"]').addClass('hold');
 
 
-        var partsList = $(document.createElement('ul')).addClass('partPicker');
+        var partsList = $(document.createElement('ul')).addClass('partPicker').addClass(pairType);
 
         // Determine which parts array I should access
         var partsArray;
@@ -35,9 +35,18 @@ $(document).ready(function(){
             partsTitle = 'Bracket';
         }
 
+        // Put those parts into the options div
         $(partsArray).each(function (key, value) {
             var li = $(document.createElement('li'));
-            li.html(value);
+            // Treat arrays a little differently
+            if (value instanceof Array) {
+                $(value).each(function(key,ind){
+                    li.append('<span class="individual">' + ind + '</span>');
+                });
+            } else {
+                li.html(value);
+            }
+
             partsList.append(li);
         }).promise().done(function () {
             $('#options').html(partsList);
