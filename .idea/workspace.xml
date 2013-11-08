@@ -32,19 +32,19 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="bigsmiley.js" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="bigsmiley.js" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/js/bigsmiley.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="17" column="54" selection-start="574" selection-end="574" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="928">
+            <state line="6" column="7" selection-start="176" selection-end="176" vertical-scroll-proportion="0.12698413" vertical-offset="0" max-vertical-offset="960">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name=".gitignore" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name=".gitignore" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/.gitignore">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="216" column="7" selection-start="2651" selection-end="2651" vertical-scroll-proportion="0.8941799" vertical-offset="2780" max-vertical-offset="3552">
+            <state line="216" column="7" selection-start="2651" selection-end="2651" vertical-scroll-proportion="0.0" vertical-offset="2780" max-vertical-offset="3552">
               <folding />
             </state>
           </provider>
@@ -71,8 +71,8 @@
       <list>
         <option value="$PROJECT_DIR$/js/parts.js" />
         <option value="$PROJECT_DIR$/index.html" />
-        <option value="$PROJECT_DIR$/js/bigsmiley.js" />
         <option value="$PROJECT_DIR$/.gitignore" />
+        <option value="$PROJECT_DIR$/js/bigsmiley.js" />
       </list>
     </option>
   </component>
@@ -242,16 +242,16 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/js/bigsmiley.js">
+    <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="54" selection-start="574" selection-end="574" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="928">
+        <state line="216" column="7" selection-start="2651" selection-end="2651" vertical-scroll-proportion="0.0" vertical-offset="2780" max-vertical-offset="3552">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/.gitignore">
+    <entry file="file://$PROJECT_DIR$/js/bigsmiley.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="216" column="7" selection-start="2651" selection-end="2651" vertical-scroll-proportion="0.8941799" vertical-offset="2780" max-vertical-offset="3552">
+        <state line="6" column="7" selection-start="176" selection-end="176" vertical-scroll-proportion="0.12698413" vertical-offset="0" max-vertical-offset="960">
           <folding />
         </state>
       </provider>

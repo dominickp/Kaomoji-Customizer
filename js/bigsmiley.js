@@ -1,7 +1,9 @@
 $(document).ready(function(){
 
     $("#bigSmiley").click(function(){
-        //$(".part").removeClass('hold');
+        $(".part").removeClass('hold');
+    }).children().click(function(e) {
+        return false;
     });
 
     // When you click on a .part, display some options
