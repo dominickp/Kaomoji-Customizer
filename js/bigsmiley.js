@@ -41,6 +41,7 @@ $(document).ready(function(){
             // Treat arrays a little differently
             if (value instanceof Array) {
                 $(value).each(function(key,ind){
+                    li.addClass('pair');
                     li.append('<span class="individual">' + ind + '</span>');
                 });
             } else {
@@ -67,11 +68,26 @@ $(document).ready(function(){
 
     // Update bigSmiley logic
     $(document).on( "click", 'ul.partPicker > li', function() {
-        selectedPart = $(this).text(); // Get the part
         selectedType = $(this).attr("data-pairType"); // Get the part's type
-        console.log(selectedPart + selectedType);
-        // Update on the big smilet
-        $('#bigSmiley *[data-pairType="' + selectedType + '"]').text(selectedPart);
+        console.log($(this));
+        // Update on the big smiley
+        if ($(this).hasClass('pair')){
+            var counter = 0;
+            $(this).children().each(function(key, value){
+                counter++; // Incriment to tell difference between left and right
+                selectedPart = $(value).text(); // Get the part
+                // Left part operation
+                if(counter == 1){
+                    $('#bigSmiley *[data-pairType="' + selectedType + '"].left').text(selectedPart);
+                } else if(counter == 2){
+                    $('#bigSmiley *[data-pairType="' + selectedType + '"].right').text(selectedPart);
+                }
+                console.log(value);
+            });
+        } else {
+            selectedPart = $(this).html(); // Get the part
+            $('#bigSmiley *[data-pairType="' + selectedType + '"]').text(selectedPart);
+        }
     });
 
 });
