@@ -1,5 +1,9 @@
 $(document).ready(function(){
 
+    $("#bigSmiley").click(function(){
+        //$(".part").removeClass('hold');
+    });
+
     // When you click on a .part, display some options
     $(".part").click(function() {
         var optionsBox = $( "div#options" );
