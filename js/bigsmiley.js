@@ -1,7 +1,12 @@
 $(document).ready(function(){
 
+    var defaultOption = '<h3>Default Option</h3>Text'; // Set the default options html in a variable
+    $('#options').html(defaultOption); // replace on page before start
+
+    // This function allows you to click off of the smiley to clear the selection
     $("#bigSmiley").click(function(){
         $(".part").removeClass('hold');
+        $('#options').html(defaultOption);
     }).children().click(function(e) {
         return false;
     });
