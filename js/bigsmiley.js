@@ -8,7 +8,7 @@ $(document).ready(function(){
         var eyePartsList = $(document.createElement('ul'));
         var eyeParts = ['A', 'B', 'C', 'D'];
 
-        $(eyeParts).each(function (key, value) {
+        $(mouth_parts).each(function (key, value) {
             var li = $(document.createElement('li'));
             li.text(value);
             eyePartsList.append(li);
