@@ -10,12 +10,16 @@
         #bigSmiley{
             font-size:100px;
             font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+            margin:auto;
+            white-space-collapse: discard;
+            font-size:0;
         }
         #bigSmiley .part{
             border-bottom:10px solid #CCC;
             padding-bottom: 20px;
             cursor: pointer;
             margin: 1px;
+            font-size: 100px;
         }
         #bigSmiley .part:hover, #bigSmiley .part.active{
             border-bottom:10px solid red;
@@ -25,6 +29,7 @@
     <script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
     <link href="//netdna.bootstrapcdn.com/bootstrap/3.0.2/css/bootstrap.min.css" rel="stylesheet">
     <script src="//netdna.bootstrapcdn.com/bootstrap/3.0.2/js/bootstrap.min.js"></script>
+    <script src="js/XXXparts.js"></script>
     <script src="js/bigsmiley.js"></script>
 </head>
 <body>
@@ -33,12 +38,17 @@
         <span class="part paired" data-pairType="flair" id="leftFlair">✌</span>
         <span class="part paired" data-pairType="bracket" id="leftBracket">(</span>
         <span class="part paired" data-pairType="eye" id="leftEye">♥</span>
-        <span class="part" id="mouth">ヮ</span>
+        <span class="part" data-pairType="mouth" id="mouth">ヮ</span>
         <span class="part paired" data-pairType="eye" id="rightEye">♥ </span>
         <span class="part paired" data-pairType="bracket" id="rightBracket">)</span>
         <span class="part paired" data-pairType="flair" id="rightFlair">&nbsp;</span>
     </div>
+    <br>
+    <hr>
+    <div class="clearfix"></div>
+    <div id="options">Default options</div>
 </div>
+
 
 </body>
 </html>
