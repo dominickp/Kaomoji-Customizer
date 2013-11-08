@@ -26,25 +26,25 @@
       <file leaf-file-name="index.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="22" column="40" selection-start="661" selection-end="661" vertical-scroll-proportion="-14.08" vertical-offset="0" max-vertical-offset="1040">
+            <state line="18" column="33" selection-start="536" selection-end="536" vertical-scroll-proportion="-11.52" vertical-offset="0" max-vertical-offset="1040">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="bigsmiley.js" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="bigsmiley.js" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/js/bigsmiley.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="31" column="0" selection-start="1068" selection-end="1068" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="592">
+            <state line="21" column="136" selection-start="744" selection-end="744" vertical-scroll-proportion="0.44444445" vertical-offset="0" max-vertical-offset="756">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="parts.js" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="parts.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/js/parts.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="3386" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1376">
+            <state line="19" column="23" selection-start="704" selection-end="704" vertical-scroll-proportion="-6.08" vertical-offset="0" max-vertical-offset="1376">
               <folding />
             </state>
           </provider>
@@ -60,9 +60,9 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/js/bigsmiley.js" />
         <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/js/parts.js" />
+        <option value="$PROJECT_DIR$/js/bigsmiley.js" />
       </list>
     </option>
   </component>
@@ -218,23 +218,23 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/js/bigsmiley.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="31" column="0" selection-start="1068" selection-end="1068" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="592">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="22" column="40" selection-start="661" selection-end="661" vertical-scroll-proportion="-14.08" vertical-offset="0" max-vertical-offset="1040">
+        <state line="18" column="33" selection-start="536" selection-end="536" vertical-scroll-proportion="-11.52" vertical-offset="0" max-vertical-offset="1040">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/js/parts.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="3386" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1376">
+        <state line="19" column="23" selection-start="704" selection-end="704" vertical-scroll-proportion="-6.08" vertical-offset="0" max-vertical-offset="1376">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/bigsmiley.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="21" column="136" selection-start="744" selection-end="744" vertical-scroll-proportion="0.44444445" vertical-offset="0" max-vertical-offset="756">
           <folding />
         </state>
       </provider>

@@ -10,7 +10,7 @@ $(document).ready(function(){
 
         $(mouth_parts).each(function (key, value) {
             var li = $(document.createElement('li'));
-            li.text(value);
+            li.html(value);
             eyePartsList.append(li);
         }).promise().done(function () {
             $('#options').append(eyePartsList);
