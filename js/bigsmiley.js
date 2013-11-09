@@ -1,5 +1,17 @@
 $(document).ready(function(){
 
+    // Store the initial bigSmiley html content for later
+    $('#bigSmiley').data( 'defaultBigSmiley', $('#bigSmiley').html() );
+
+    // Function for resizing the smiley based on length
+    var fontScale = function() {
+        var currentSmiley = $('#bigSmiley').children().text();
+        var length = currentSmiley.length
+        var size = 90 - length + 'px';
+        console.log(size);
+        $("#bigSmiley > .part").css('font-size',size);
+    }
+
     var defaultOption = '<h3>Default Option</h3>Text'; // Set the default options html in a variable
     $('#options').html(defaultOption); // replace on page before start
 
@@ -33,6 +45,12 @@ $(document).ready(function(){
         } else if(pairType == 'bracket'){
             partsArray = bracket_parts;
             partsTitle = 'Bracket';
+        } else if(pairType == 'leftFlair'){
+            partsArray = leftFlair_parts;
+            partsTitle = 'Left Flair';
+        } else if(pairType == 'rightFlair'){
+            partsArray = rightFlair_parts;
+            partsTitle = 'Right Flair';
         }
 
         // Put those parts into the options div
@@ -69,7 +87,6 @@ $(document).ready(function(){
     // Update bigSmiley logic
     $(document).on( "click", 'ul.partPicker > li', function() {
         selectedType = $(this).attr("data-pairType"); // Get the part's type
-        console.log($(this));
         // Update on the big smiley
         if ($(this).hasClass('pair')){
             var counter = 0;
@@ -82,12 +99,49 @@ $(document).ready(function(){
                 } else if(counter == 2){
                     $('#bigSmiley *[data-pairType="' + selectedType + '"].right').text(selectedPart);
                 }
-                console.log(value);
             });
+            fontScale();
         } else {
-            selectedPart = $(this).html(); // Get the part
+            selectedPart = $(this).text(); // Get the part
             $('#bigSmiley *[data-pairType="' + selectedType + '"]').text(selectedPart);
+            fontScale();
         }
     });
+
+    // Turn right and left logic
+    $("#turnLeft").click(function(){
+        // Check to see if that spacer is already there, if so, don't add another one.
+        $("#leftSpacer").remove();
+        // Add the new spacer
+        $("#leftBracket").after("<span id='leftSpacer' class='part spacer'>&nbsp;</span>");
+        // Remove the old one
+        $("#rightSpacer").remove();
+    });
+    $("#turnRight").click(function(){
+        // Check to see if that spacer is already there, if so, don't add another one.
+        $("#rightSpacer").remove();
+        // Add the new spacer
+        $("#rightBracket").before("<span id='rightSpacer' class='part spacer'>&nbsp;</span>");
+        // Remove the old one
+        $("#leftSpacer").remove();
+    });
+
+    // Center
+    $("#center").click(function(){
+        // Check to see if that spacer is already there, if so, don't add another one.
+        if($('#rightSpacer').length == 0){
+            $("#rightBracket").before("<span id='rightSpacer' class='part spacer'>&nbsp;</span>");
+        }
+        if($('#leftSpacer').length == 0){
+            $("#leftBracket").after("<span id='leftSpacer' class='part spacer'>&nbsp;</span>");
+        }
+    });
+
+    // Reset button
+    $("#reset").click(function(){
+        $("#bigSmiley").html($("#bigSmiley").data("defaultBigSmiley"));
+        //console.log($("#bigSmiley").data("defaultBigSmiley"));
+    });
+
 
 });

@@ -23,12 +23,7 @@
             cursor: pointer;
             margin: 1px;
             font-size: 100px;
-            -webkit-touch-callout: none;
-            -webkit-user-select: none;
-            -khtml-user-select: none;
-            -moz-user-select: none;
-            -ms-user-select: none;
-            user-select: none;
+
         }
         #bigSmiley .part:hover, #bigSmiley .part.active{
             border-bottom:10px solid orange;
@@ -38,6 +33,9 @@
         #bigSmiley .part.hold{
             border-bottom:10px solid red;
             color:#666;
+        }
+        #bigSmiley .part.spacer{
+            border:0;
         }
         .partPicker{
             list-style: none;
@@ -75,20 +73,20 @@
     <div class="row">
         <div class="col-md-12">
             <div id="bigSmiley">
-                <span class="part paired left" data-pairType="flair" id="leftFlair">✌</span>
-                <span class="part paired left" data-pairType="bracket" id="leftBracket">(</span>
-                <span class="part paired left" data-pairType="eye" id="leftEye">♥</span>
-                <span class="part" data-pairType="mouth" id="mouth">ヮ</span>
-                <span class="part paired right" data-pairType="eye" id="rightEye">♥ </span>
-                <span class="part paired right" data-pairType="bracket" id="rightBracket">)</span>
-                <span class="part paired right" data-pairType="flair" id="rightFlair">&nbsp;</span>
-                <div class="clearfix"> </div>
+                <span class="part left" data-pairType="leftFlair" id="leftFlair">✌</span><span class="part paired left" data-pairType="bracket" id="leftBracket">(</span><span class="part paired left" data-pairType="eye" id="leftEye">-</span><span class="part" data-pairType="mouth" id="mouth">ヮ</span><span class="part paired right" data-pairType="eye" id="rightEye">-</span><span class="part paired right" data-pairType="bracket" id="rightBracket">)</span><span class="part right" data-pairType="rightFlair" id="rightFlair">&nbsp;</span><div class="clearfix"> </div>
             </div>
         </div>
     </div>
     <div class="row">
-        <div class="col-md-12">
+        <div class="col-md-8">
             <div id="options">Default options</div>
+        </div>
+        <div class="col-md-4">
+            <h3>Options</h3>
+            <a class="btn btn-primary" id="turnRight"><span class="glyphicon glyphicon-arrow-left"></span> Turn Left</a>
+            <a class="btn btn-primary" id="center"><span class="glyphicon glyphicon-resize-horizontal"></span> Center</a>
+            <a class="btn btn-primary" id="turnLeft"><span class="glyphicon glyphicon-arrow-right"></span> Turn Right</a>
+            <a class="btn btn-primary" id="reset"><span class="glyphicon glyphicon-remove"></span> Reset</a>
         </div>
     </div>
 </div>
