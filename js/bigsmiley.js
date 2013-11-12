@@ -1,5 +1,6 @@
 $(document).ready(function(){
 
+
     // Store the initial bigSmiley html content for later
     $('#bigSmiley').data( 'defaultBigSmiley', $('#bigSmiley').html() );
 
@@ -20,13 +21,16 @@ $(document).ready(function(){
 
     // Do this every time the Smiley changes
     var smileyUpdate = function() {
-        fontScale(); // Scale the font
+    //    fontScale(); // Scale the font
         $("title").text(getSmiley()); // Update the html title
+        $(".customizer").bigtext();
     }
 
 
     var defaultOption = '<h3>Default Option</h3>Text'; // Set the default options html in a variable
     $('#options').html(defaultOption); // replace on page before start
+
+
 
     // This function allows you to click off of the smiley to clear the selection
     $("#bigSmiley").click(function(){
@@ -82,7 +86,7 @@ $(document).ready(function(){
             partsList.append(li);
         }).promise().done(function () {
             $('#options').html(partsList);
-            $('#options').prepend('<h3>'+partsTitle+' parts</h3>');
+            $('#options').prepend('<h4>'+partsTitle+' parts</h4>');
         });
 
 
