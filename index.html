@@ -4,6 +4,9 @@
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
     <title>Test Interface</title>
     <style>
+        html,body,.clickWrapper{
+            height:100%;
+        }
         .customizer{
             text-align:center;
             width:80%;
@@ -14,7 +17,6 @@
             margin:auto;
             white-space-collapse: discard;
             font-size:0;
-            overflow:hidden;
             height: 180px;
             /* border-bottom: 1px solid #DDD; */
         }
@@ -87,57 +89,15 @@
     <script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
     <link href="//netdna.bootstrapcdn.com/bootstrap/3.0.2/css/bootstrap.min.css" rel="stylesheet">
     <script src="//netdna.bootstrapcdn.com/bootstrap/3.0.2/js/bootstrap.min.js"></script>
-    <script src="js/autoshrink.js"></script>
     <script src="js/parts.js"></script>
     <script src="js/bigsmiley.js"></script>
 
 </head>
 <body>
 <div id="optionsContainer" class="greyPanel">
-    <div id="options"><div class="panel-group" id="accordion">
-        <div class="panel panel-default">
-            <div class="panel-heading">
-                <h4 class="panel-title">
-                    <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne">
-                        Collapsible Group Item #1
-                    </a>
-                </h4>
-            </div>
-            <div id="collapseOne" class="panel-collapse collapse in">
-                <div class="panel-body">
-                    Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
-                </div>
-            </div>
-        </div>
-        <div class="panel panel-default">
-            <div class="panel-heading">
-                <h4 class="panel-title">
-                    <a data-toggle="collapse" data-parent="#accordion" href="#collapseTwo">
-                        Collapsible Group Item #2
-                    </a>
-                </h4>
-            </div>
-            <div id="collapseTwo" class="panel-collapse collapse">
-                <div class="panel-body">
-                    Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
-                </div>
-            </div>
-        </div>
-        <div class="panel panel-default">
-            <div class="panel-heading">
-                <h4 class="panel-title">
-                    <a data-toggle="collapse" data-parent="#accordion" href="#collapseThree">
-                        Collapsible Group Item #3
-                    </a>
-                </h4>
-            </div>
-            <div id="collapseThree" class="panel-collapse collapse">
-                <div class="panel-body">
-                    Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
-                </div>
-            </div>
-        </div>
-    </div></div>
+    <div id="options">
+        You shouldn't see this!
+    </div>
     <div id="subOptions">
         <h4>Options</h4>
         <p>
@@ -151,12 +111,13 @@
         <p class="text-center"><a class="btn btn-danger btn-xs" id="reset"><span class="glyphicon glyphicon-remove"></span> Reset</a></p>
     </div>
 </div>
-<div class="customizer">
-    <div id="bigSmiley">
-        <span class="part left" data-pairType="leftFlair" id="leftFlair">✌</span><span class="part paired left" data-pairType="bracket" id="leftBracket">(</span><span class="part paired left" data-pairType="eye" id="leftEye">-</span><span class="part" data-pairType="mouth" id="mouth">ヮ</span><span class="part paired right" data-pairType="eye" id="rightEye">-</span><span class="part paired right" data-pairType="bracket" id="rightBracket">)</span><span class="part right" data-pairType="rightFlair" id="rightFlair">&nbsp;</span><div class="clearfix"> </div>
+<div class="clickWrapper">
+    <div class="customizer">
+        <div id="bigSmiley">
+            <span class="part left" data-pairType="leftFlair" id="leftFlair" title="Left Flair">✌</span><span class="part paired left" data-pairType="bracket" id="leftBracket" title="Brackets">(</span><span class="part paired left" data-pairType="eye" id="leftEye" title="Eyes">-</span><span class="part" data-pairType="mouth" id="mouth" title="Mouth">ヮ</span><span class="part paired right" data-pairType="eye" id="rightEye" title="Eyes">-</span><span class="part paired right" data-pairType="bracket" id="rightBracket" title="Brackets">)</span><span class="part right" data-pairType="rightFlair" id="rightFlair" title="Right Flair">&nbsp;</span><div class="clearfix"> </div>
+        </div>
     </div>
 </div>
-
 
 </body>
 </html>

@@ -1,5 +1,7 @@
 $(document).ready(function(){
 
+    // Initialize Tooltips
+    $('.part').tooltip({"placement":"bottom"})
 
     // Store the initial bigSmiley html content for later
     $('#bigSmiley').data( 'defaultBigSmiley', $('#bigSmiley').html() );
@@ -8,10 +10,13 @@ $(document).ready(function(){
     var fontScale = function() {
         var currentSmiley = $('#bigSmiley').children().text();
         var length = currentSmiley.length
-        var size = 90 - length + 'px';
+        var scaleFactor = 2;
+        var size = 120 - ( length * scaleFactor ) + 'px';
         console.log(size);
         $("#bigSmiley > .part").css('font-size',size);
     }
+
+    fontScale(); // Scale the font on page load
 
     // Function for returning the current smiley as text
     var getSmiley = function() {
@@ -21,9 +26,8 @@ $(document).ready(function(){
 
     // Do this every time the Smiley changes
     var smileyUpdate = function() {
-    //    fontScale(); // Scale the font
+        fontScale(); // Scale the font
         $("title").text(getSmiley()); // Update the html title
-        $(".customizer").bigtext();
     }
 
 
@@ -33,7 +37,7 @@ $(document).ready(function(){
 
 
     // This function allows you to click off of the smiley to clear the selection
-    $("#bigSmiley").click(function(){
+    $(".clickWrapper").click(function(){
         $(".part").removeClass('hold');
         $('#options').html(defaultOption);
     }).children().click(function(e) {
