@@ -12,6 +12,19 @@ $(document).ready(function(){
         $("#bigSmiley > .part").css('font-size',size);
     }
 
+    // Function for returning the current smiley as text
+    var getSmiley = function() {
+        var currentSmiley = $('#bigSmiley').children().text();;
+        return currentSmiley;
+    }
+
+    // Do this every time the Smiley changes
+    var smileyUpdate = function() {
+        fontScale(); // Scale the font
+        $("title").text(getSmiley()); // Update the html title
+    }
+
+
     var defaultOption = '<h3>Default Option</h3>Text'; // Set the default options html in a variable
     $('#options').html(defaultOption); // replace on page before start
 
@@ -100,30 +113,25 @@ $(document).ready(function(){
                     $('#bigSmiley *[data-pairType="' + selectedType + '"].right').text(selectedPart);
                 }
             });
-            fontScale();
         } else {
             selectedPart = $(this).text(); // Get the part
             $('#bigSmiley *[data-pairType="' + selectedType + '"]').text(selectedPart);
-            fontScale();
         }
+        smileyUpdate(); // Run smiley update function
     });
 
     // Turn right and left logic
     $("#turnLeft").click(function(){
-        // Check to see if that spacer is already there, if so, don't add another one.
-        $("#leftSpacer").remove();
-        // Add the new spacer
-        $("#leftBracket").after("<span id='leftSpacer' class='part spacer'>&nbsp;</span>");
-        // Remove the old one
-        $("#rightSpacer").remove();
+        $("#leftSpacer").remove(); // Check to see if that spacer is already there, if so, don't add another one.
+        $("#leftBracket").after("<span id='leftSpacer' class='part spacer'>&nbsp;</span>"); // Add the new spacer
+        $("#rightSpacer").remove(); // Remove the old one
+        smileyUpdate(); // Run smiley update function
     });
     $("#turnRight").click(function(){
-        // Check to see if that spacer is already there, if so, don't add another one.
-        $("#rightSpacer").remove();
-        // Add the new spacer
-        $("#rightBracket").before("<span id='rightSpacer' class='part spacer'>&nbsp;</span>");
-        // Remove the old one
-        $("#leftSpacer").remove();
+        $("#rightSpacer").remove(); // Check to see if that spacer is already there, if so, don't add another one.
+        $("#rightBracket").before("<span id='rightSpacer' class='part spacer'>&nbsp;</span>"); // Add the new spacer
+        $("#leftSpacer").remove(); // Remove the old one
+        smileyUpdate(); // Run smiley update function
     });
 
     // Center
@@ -135,12 +143,12 @@ $(document).ready(function(){
         if($('#leftSpacer').length == 0){
             $("#leftBracket").after("<span id='leftSpacer' class='part spacer'>&nbsp;</span>");
         }
+        smileyUpdate(); // Run smiley update function
     });
 
     // Reset button
     $("#reset").click(function(){
-        $("#bigSmiley").html($("#bigSmiley").data("defaultBigSmiley"));
-        //console.log($("#bigSmiley").data("defaultBigSmiley"));
+        location.reload(); // Reset the DOM
     });
 
 

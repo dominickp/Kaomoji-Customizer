@@ -26,7 +26,7 @@
       <file leaf-file-name="index.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="88" column="48" selection-start="3440" selection-end="3440" vertical-scroll-proportion="-25.4" vertical-offset="773" max-vertical-offset="1616">
+            <state line="22" column="33" selection-start="664" selection-end="664" vertical-scroll-proportion="-8.12" vertical-offset="149" max-vertical-offset="1952">
               <folding />
             </state>
           </provider>
@@ -35,7 +35,7 @@
       <file leaf-file-name="bigsmiley.js" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/js/bigsmiley.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="3" column="3" selection-start="92" selection-end="92" vertical-scroll-proportion="0.05549133" vertical-offset="0" max-vertical-offset="2448">
+            <state line="150" column="43" selection-start="6069" selection-end="6069" vertical-scroll-proportion="0.7904762" vertical-offset="1736" max-vertical-offset="2576">
               <folding />
             </state>
           </provider>
@@ -44,7 +44,7 @@
       <file leaf-file-name=".gitignore" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/.gitignore">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="216" column="7" selection-start="2651" selection-end="2651" vertical-scroll-proportion="0.0" vertical-offset="2780" max-vertical-offset="3552">
+            <state line="216" column="7" selection-start="2651" selection-end="2651" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="3552">
               <folding />
             </state>
           </provider>
@@ -53,7 +53,7 @@
       <file leaf-file-name="parts.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/js/parts.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="49" column="0" selection-start="1901" selection-end="1901" vertical-scroll-proportion="0.0" vertical-offset="687" max-vertical-offset="1552">
+            <state line="49" column="0" selection-start="1901" selection-end="1901" vertical-scroll-proportion="0.0" vertical-offset="784" max-vertical-offset="1424">
               <folding />
             </state>
           </provider>
@@ -79,8 +79,8 @@
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" interpreter_name="PHP 5.4.12" />
   <component name="ProjectFrameBounds">
-    <option name="x" value="41" />
-    <option name="y" value="7" />
+    <option name="x" value="101" />
+    <option name="y" value="6" />
     <option name="width" value="1518" />
     <option name="height" value="1017" />
   </component>
@@ -151,8 +151,9 @@
     <property name="options.splitter.main.proportions" value="0.3" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="options.lastSelected" value="Configurable.PHP" />
-    <property name="options.splitter.details.proportions" value="0.2" />
+    <property name="FullScreen" value="false" />
     <property name="options.searchVisible" value="true" />
+    <property name="options.splitter.details.proportions" value="0.2" />
   </component>
   <component name="RunManager">
     <configuration default="true" type="PHPUnitRunConfigurationType" factoryName="PHPUnit">
@@ -180,7 +181,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="41" y="7" width="1518" height="1017" extended-state="0" />
+    <frame x="101" y="6" width="1518" height="1017" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -215,6 +216,34 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="88" column="48" selection-start="3440" selection-end="3440" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1616">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/bigsmiley.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="3" column="3" selection-start="92" selection-end="92" vertical-scroll-proportion="0.0" vertical-offset="48" max-vertical-offset="2448">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="216" column="7" selection-start="2651" selection-end="2651" vertical-scroll-proportion="0.0" vertical-offset="2780" max-vertical-offset="3552">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/parts.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="49" column="0" selection-start="1901" selection-end="1901" vertical-scroll-proportion="0.0" vertical-offset="784" max-vertical-offset="1424">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state line="81" column="34" selection-start="2775" selection-end="2775" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1792">
@@ -257,13 +286,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/.gitignore">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="216" column="7" selection-start="2651" selection-end="2651" vertical-scroll-proportion="0.0" vertical-offset="2780" max-vertical-offset="3552">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/js/parts.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="49" column="0" selection-start="1901" selection-end="1901" vertical-scroll-proportion="0.0" vertical-offset="687" max-vertical-offset="1552">
@@ -271,16 +293,23 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="216" column="7" selection-start="2651" selection-end="2651" vertical-scroll-proportion="0.0" vertical-offset="2780" max-vertical-offset="3552">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="88" column="48" selection-start="3440" selection-end="3440" vertical-scroll-proportion="-25.4" vertical-offset="773" max-vertical-offset="1616">
+        <state line="22" column="33" selection-start="664" selection-end="664" vertical-scroll-proportion="-8.12" vertical-offset="149" max-vertical-offset="1952">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/js/bigsmiley.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="3" selection-start="92" selection-end="92" vertical-scroll-proportion="0.05549133" vertical-offset="0" max-vertical-offset="2448">
+        <state line="150" column="43" selection-start="6069" selection-end="6069" vertical-scroll-proportion="0.7904762" vertical-offset="1736" max-vertical-offset="2576">
           <folding />
         </state>
       </provider>
