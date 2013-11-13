@@ -93,10 +93,10 @@
             border-top: 1px solid #DDD;
             padding: 6px 10px;
         }
-        #serifPreview{
+        #serifPreview, .forceSerif{
             font-family: serif !important;
         }
-        #sanSerifPreview{
+        #sanSerifPreview, .forceSansSerif{
             font-family: sans-serif !important;
         }
     </style>
@@ -111,8 +111,8 @@
 <body>
 <div id="toolBar">
     <a class="btn btn-xs btn-primary pull-right" id="clipBoard">Copy to Clipboard</a>
-    Serif Preview: <span id="serifPreview"></span>
-    Sans-serif Preview: <span id="sanSerifPreview"></span>
+    <span class="forceSerif"> Serif Preview:</span> <span id="serifPreview"></span>
+    <span class="forceSansSerif">Sans-serif Preview:</span> <span id="sanSerifPreview"></span>
 </div>
 <div id="optionsContainer" class="greyPanel">
     <div id="options">
