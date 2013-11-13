@@ -12,7 +12,7 @@ $(document).ready(function(){
         var length = currentSmiley.length
         var scaleFactor = 2;
         var size = 120 - ( length * scaleFactor ) + 'px';
-        console.log(size);
+        console.log(size); // Log for debugging until I get this working nicely
         $("#bigSmiley > .part").css('font-size',size);
     }
 
@@ -28,8 +28,10 @@ $(document).ready(function(){
     var smileyUpdate = function() {
         fontScale(); // Scale the font
         $("title").text(getSmiley()); // Update the html title
+        $('.part').tooltip({"placement":"bottom"}); // Reinitialize when the smiley is updated. Due to adding/removing cheecks
     }
 
+    var cheeckMemory = ''; // Declare this variable which will be used to hang on to the cheeck when flipping left to right
 
     var defaultOption = '<h3>Default Option</h3>Text'; // Set the default options html in a variable
     $('#options').html(defaultOption); // replace on page before start
@@ -66,6 +68,9 @@ $(document).ready(function(){
         } else if(pairType == 'bracket'){
             partsArray = bracket_parts;
             partsTitle = 'Bracket';
+        } else if(pairType == 'cheeck'){
+            partsArray = cheeck_parts;
+            partsTitle = 'Cheeck';
         } else if(pairType == 'leftFlair'){
             partsArray = leftFlair_parts;
             partsTitle = 'Left Flair';
@@ -108,6 +113,10 @@ $(document).ready(function(){
     // Update bigSmiley logic
     $(document).on( "click", 'ul.partPicker > li', function() {
         selectedType = $(this).attr("data-pairType"); // Get the part's type
+
+        // Update cheeckMemory so the alignment functions can know what to place
+        if(selectedType == 'cheeck'){ cheeckMemory = $(this).text(); }
+
         // Update on the big smiley
         if ($(this).hasClass('pair')){
             var counter = 0;
@@ -128,28 +137,55 @@ $(document).ready(function(){
         smileyUpdate(); // Run smiley update function
     });
 
+
+
     // Turn right and left logic
     $("#turnLeft").click(function(){
         $("#leftSpacer").remove(); // Check to see if that spacer is already there, if so, don't add another one.
-        $("#leftBracket").after("<span id='leftSpacer' class='part spacer'>&nbsp;</span>"); // Add the new spacer
-        $("#rightSpacer").remove(); // Remove the old one
+
+        if(cheeckMemory == '' || (!cheeckMemory)) {
+            cheeckMemory = $("#rightCheeck").text(); // Update memory (if not blank)
+        } else {
+            if($("#leftCheeck").length != 0){
+                $("#leftCheeck").text(cheeckMemory); // If left cheeck exists, update it
+            } else {
+                $("#leftBracket").after('<span class="part paired left" data-pairType="cheeck" id="leftCheeck" title="Cheecks">'+cheeckMemory+'</span>'); // If left cheeck doesn't exist, add it.
+            }
+        }
+
+        $("#rightCheeck").remove(); // Remove the right cheeck if facing left
+        //$("#leftBracket").after("<span id='leftSpacer' class='part spacer'>&nbsp;</span>"); // Add the new spacer
+        //$("#rightSpacer").remove(); // Remove the old one
         smileyUpdate(); // Run smiley update function
     });
+
     $("#turnRight").click(function(){
         $("#rightSpacer").remove(); // Check to see if that spacer is already there, if so, don't add another one.
-        $("#rightBracket").before("<span id='rightSpacer' class='part spacer'>&nbsp;</span>"); // Add the new spacer
-        $("#leftSpacer").remove(); // Remove the old one
+
+        if(cheeckMemory == '' || (!cheeckMemory)) {
+            cheeckMemory = $("#leftCheeck").text(); // Update memory (if not blank)
+        } else {
+            if($("#rightCheeck").length != 0){
+                $("#rightCheeck").text(cheeckMemory); // If left cheeck exists, update it
+            } else {
+                $("#rightBracket").before('<span class="part paired right" data-pairType="cheeck" id="rightCheeck" title="Cheecks">'+cheeckMemory+'</span>'); // If left cheeck doesn't exist, add it.
+            }
+        }
+
+        $("#leftCheeck").remove(); // Remove the left cheeck if facing left
+        // $("#rightBracket").before("<span id='rightSpacer' class='part spacer'>&nbsp;</span>"); // Add the new spacer
+        //$("#leftSpacer").remove(); // Remove the old one
         smileyUpdate(); // Run smiley update function
     });
 
     // Center
     $("#center").click(function(){
         // Check to see if that spacer is already there, if so, don't add another one.
-        if($('#rightSpacer').length == 0){
-            $("#rightBracket").before("<span id='rightSpacer' class='part spacer'>&nbsp;</span>");
+        if($('#rightCheeck').length == 0){
+            $("#rightBracket").before('<span class="part paired right" data-pairType="cheeck" id="rightCheeck" title="Cheecks">'+cheeckMemory+'</span>');
         }
-        if($('#leftSpacer').length == 0){
-            $("#leftBracket").after("<span id='leftSpacer' class='part spacer'>&nbsp;</span>");
+        if($('#leftCheeck').length == 0){
+            $("#leftBracket").after('<span class="part paired left" data-pairType="cheeck" id="leftCheeck" title="Cheecks">'+cheeckMemory+'</span>');
         }
         smileyUpdate(); // Run smiley update function
     });

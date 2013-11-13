@@ -23,19 +23,19 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="index.html" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="index.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="116" column="102" selection-start="4643" selection-end="4643" vertical-scroll-proportion="0.76783556" vertical-offset="1221" max-vertical-offset="2176">
+            <state line="98" column="31" selection-start="3730" selection-end="3730" vertical-scroll-proportion="-8.76" vertical-offset="1349" max-vertical-offset="2176">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="bigsmiley.js" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="bigsmiley.js" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/js/bigsmiley.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="3" column="45" selection-start="103" selection-end="103" vertical-scroll-proportion="0.0" vertical-offset="48" max-vertical-offset="2704">
+            <state line="29" column="62" selection-start="1082" selection-end="1082" vertical-scroll-proportion="0.5364162" vertical-offset="0" max-vertical-offset="3344">
               <folding />
             </state>
           </provider>
@@ -73,8 +73,8 @@
         <option value="$PROJECT_DIR$/js/fontresize.js" />
         <option value="$PROJECT_DIR$/js/parts.js" />
         <option value="$PROJECT_DIR$/js/autoshrink.js" />
-        <option value="$PROJECT_DIR$/js/bigsmiley.js" />
         <option value="$PROJECT_DIR$/index.html" />
+        <option value="$PROJECT_DIR$/js/bigsmiley.js" />
       </list>
     </option>
   </component>
@@ -218,7 +218,7 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/js/bigsmiley.js</url>
-          <line>33</line>
+          <line>36</line>
           <option name="timeStamp" value="2" />
         </line-breakpoint>
       </breakpoints>
@@ -324,16 +324,16 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/js/bigsmiley.js">
+    <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="45" selection-start="103" selection-end="103" vertical-scroll-proportion="0.0" vertical-offset="48" max-vertical-offset="2704">
+        <state line="98" column="31" selection-start="3730" selection-end="3730" vertical-scroll-proportion="-8.76" vertical-offset="1349" max-vertical-offset="2176">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/index.html">
+    <entry file="file://$PROJECT_DIR$/js/bigsmiley.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="116" column="102" selection-start="4643" selection-end="4643" vertical-scroll-proportion="0.76783556" vertical-offset="1221" max-vertical-offset="2176">
+        <state line="29" column="62" selection-start="1082" selection-end="1082" vertical-scroll-proportion="0.5364162" vertical-offset="0" max-vertical-offset="3344">
           <folding />
         </state>
       </provider>
