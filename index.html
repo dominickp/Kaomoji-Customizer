@@ -11,6 +11,14 @@
             text-align:center;
             width:80%;
         }
+        .noSelect{
+            -webkit-touch-callout: none;
+            -webkit-user-select: none;
+            -khtml-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+        }
         #bigSmiley{
             font-size:100px;
             font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
@@ -26,7 +34,12 @@
             cursor: pointer;
             margin: 1px;
             font-size: 100px;
-
+            -webkit-touch-callout: none;
+            -webkit-user-select: none;
+            -khtml-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
         }
         #bigSmiley .part:hover, #bigSmiley .part.active{
             border-bottom:10px solid orange;
@@ -93,12 +106,6 @@
             border-top: 1px solid #DDD;
             padding: 6px 10px;
         }
-        #serifPreview, .forceSerif{
-            font-family: serif !important;
-        }
-        #sanSerifPreview, .forceSansSerif{
-            font-family: sans-serif !important;
-        }
     </style>
     <script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
     <link href="//netdna.bootstrapcdn.com/bootstrap/3.0.2/css/bootstrap.min.css" rel="stylesheet">
@@ -110,15 +117,17 @@
 </head>
 <body>
 <div id="toolBar">
-    <a class="btn btn-xs btn-primary pull-right" id="clipBoard">Copy to Clipboard</a>
-    <span class="forceSerif"> Serif Preview:</span> <span id="serifPreview"></span>
-    <span class="forceSansSerif">Sans-serif Preview:</span> <span id="sanSerifPreview"></span>
+    <a class="btn btn-xs btn-default pull-right" href="https://github.com/dominickp/p3.kaomoj.in" target="_blank">View on GitHub</a>
+
+    Small Preview:
+    <span id="smallPreview"></span>
+    <a class="btn btn-xs btn-primary" id="clipBoard">Copy to Clipboard</a>
 </div>
-<div id="optionsContainer" class="greyPanel">
+<div id="optionsContainer" class="greyPanel noSelect">
     <div id="options">
         You shouldn't see this!
     </div>
-    <div id="subOptions">
+    <div id="subOptions" class="noSelect">
         <h4>Options</h4>
         <p>
             <div class="btn-group btn-group-sm">
@@ -132,7 +141,7 @@
     </div>
 </div>
 <div class="clickWrapper">
-    <div class="customizer">
+    <div class="customizer noSelect">
         <div id="bigSmiley">
             <span class="part left" data-pairType="leftFlair" id="leftFlair" title="Left Flair">&nbsp;</span>
             <span class="part paired left" data-pairType="bracket" id="leftBracket" title="Brackets">(</span>

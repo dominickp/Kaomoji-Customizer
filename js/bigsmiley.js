@@ -52,15 +52,13 @@ $(document).ready(function(){
     }
     setZeroClipboardAction(); // Initialize ZeroClipBoard
 
-    $("#serifPreview").text(getSmiley()); // Update the previews
-    $("#sanSerifPreview").text(getSmiley()); // ...
+    $("#smallPreview").text(getSmiley()); // Update the small preview
 
     // Do this every time the Smiley changes
     var smileyUpdate = function() {
         fontScale(); // Scale the font
         $("title").text(getSmiley()); // Update the html title
-        $("#serifPreview").text(getSmiley()); // Update the previews
-        $("#sanSerifPreview").text(getSmiley()); // ...
+        $("#smallPreview").text(getSmiley()); // Update the small preview
         $('.part').tooltip({"placement":"bottom"}); // Reinitialize when the smiley is updated. Due to adding/removing cheecks
         setZeroClipboardAction();
         setHoverAction(); // Reinitialize hover action
