@@ -24,6 +24,19 @@ $(document).ready(function(){
         return currentSmiley;
     }
 
+    var setHoverAction = function() {
+        // This function looks for any .paired elements, then looks for any others that match the data-pairType value and changes them on hover.
+        $(".paired").hover(function() {
+            var pairType = $(this).attr("data-pairType");
+            $('*[data-pairType="' + pairType + '"]').addClass('active');
+        }, function () {
+            var pairType = $(this).attr("data-pairType");
+            $('*[data-pairType="' + pairType + '"]').removeClass('active');
+        });
+    }
+
+    setHoverAction(); // Initialize hover action
+
     // Do this every time the Smiley changes
     var smileyUpdate = function() {
         fontScale(); // Scale the font
@@ -42,6 +55,7 @@ $(document).ready(function(){
                 $(this).next('.check').show();
             }
         });
+        setHoverAction(); // Reinitialize hover action
     }
 
     // Declare this variable which will be used to hang on to the cheeck when flipping left to right. Set as inital left cheeck for default.
@@ -112,15 +126,6 @@ $(document).ready(function(){
         });
     });
 
-    // This function looks for any .paired elements, then looks for any others that match the data-pairType value and changes them on hover.
-    $(".paired").hover(function() {
-        var pairType = $(this).attr("data-pairType");
-        $('*[data-pairType="' + pairType + '"]').addClass('active');
-    }, function () {
-        var pairType = $(this).attr("data-pairType");
-        $('*[data-pairType="' + pairType + '"]').removeClass('active');
-    });
-
     // Update bigSmiley logic
     $(document).on( "click", 'ul.partPicker > li', function() {
         selectedType = $(this).attr("data-pairType"); // Get the part's type
@@ -150,8 +155,6 @@ $(document).ready(function(){
 
     // Turn right and left logic
     $("#turnLeft").click(function(){
-        $("#leftSpacer").remove(); // Check to see if that spacer is already there, if so, don't add another one.
-
         if(cheeckMemory == '' || (!cheeckMemory)) {
             cheeckMemory = $("#rightCheeck").text(); // Update memory (if not blank)
         } else {
@@ -161,24 +164,20 @@ $(document).ready(function(){
                 $("#leftBracket").after('<span class="part paired left" data-pairType="cheeck" id="leftCheeck" title="Cheecks">'+cheeckMemory+'</span>'); // If left cheeck doesn't exist, add it.
             }
         }
-
         $("#rightCheeck").remove(); // Remove the right cheeck if facing left
         smileyUpdate(); // Run smiley update function
     });
 
     $("#turnRight").click(function(){
-        $("#rightSpacer").remove(); // Check to see if that spacer is already there, if so, don't add another one.
-
         if(cheeckMemory == '' || (!cheeckMemory)) {
             cheeckMemory = $("#leftCheeck").text(); // Update memory (if not blank)
         } else {
             if($("#rightCheeck").length != 0){
-                $("#rightCheeck").text(cheeckMemory); // If left cheeck exists, update it
+                $("#rightCheeck").text(cheeckMemory); // If right  cheeck exists, update it
             } else {
                 $("#rightBracket").before('<span class="part paired right" data-pairType="cheeck" id="rightCheeck" title="Cheecks">'+cheeckMemory+'</span>'); // If left cheeck doesn't exist, add it.
             }
         }
-
         $("#leftCheeck").remove(); // Remove the left cheeck if facing left
         smileyUpdate(); // Run smiley update function
     });
