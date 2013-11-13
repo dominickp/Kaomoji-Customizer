@@ -85,6 +85,20 @@
             filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ededed', endColorstr='#ffffff',GradientType=1 ); /* IE6-9 */
             border-left: 1px solid #DDD;
         }
+        #toolBar{
+            position: fixed;
+            bottom: 0;
+            width: 80%;
+            background-color: aliceblue;
+            border-top: 1px solid #DDD;
+            padding: 6px 10px;
+        }
+        #serifPreview{
+            font-family: serif !important;
+        }
+        #sanSerifPreview{
+            font-family: sans-serif !important;
+        }
     </style>
     <script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
     <link href="//netdna.bootstrapcdn.com/bootstrap/3.0.2/css/bootstrap.min.css" rel="stylesheet">
@@ -95,6 +109,11 @@
 
 </head>
 <body>
+<div id="toolBar">
+    <a class="btn btn-xs btn-primary pull-right" id="clipBoard">Copy to Clipboard</a>
+    Serif Preview: <span id="serifPreview"></span>
+    Sans-serif Preview: <span id="sanSerifPreview"></span>
+</div>
 <div id="optionsContainer" class="greyPanel">
     <div id="options">
         You shouldn't see this!
@@ -107,7 +126,6 @@
                 <a class="btn btn-default" id="center" title="Center"><span class="glyphicon glyphicon-resize-horizontal"></span></a>
                 <a class="btn btn-default" id="turnLeft" title="Turn Right"><span class="glyphicon glyphicon-arrow-right"></span></a>
             </div>
-        <a class="btn btn-primary" id="clipBoard">Copy to Clipboard</a>
         </p>
         <hr>
         <p class="text-center"><a class="btn btn-danger btn-xs" id="reset"><span class="glyphicon glyphicon-remove"></span> Reset</a></p>

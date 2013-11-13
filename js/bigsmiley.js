@@ -34,27 +34,35 @@ $(document).ready(function(){
             $('*[data-pairType="' + pairType + '"]').removeClass('active');
         });
     }
-
     setHoverAction(); // Initialize hover action
 
-    // Do this every time the Smiley changes
-    var smileyUpdate = function() {
-        fontScale(); // Scale the font
-        $("title").text(getSmiley()); // Update the html title
-        $('.part').tooltip({"placement":"bottom"}); // Reinitialize when the smiley is updated. Due to adding/removing cheecks
-
+    var setZeroClipboardAction = function() {
         // Initialize ZeroClipboard
         $("a#clipBoard").zclip({
             path:'js/ZeroClipboard.swf',
             copy:getSmiley(),
             beforeCopy:function(){
-                $('#bigSmiley').css('color','red');
+                $('#bigSmiley').css('color','#3276b1');
             },
             afterCopy:function(){
                 $('#bigSmiley').css('color','#333');
                 $(this).next('.check').show();
             }
         });
+    }
+    setZeroClipboardAction(); // Initialize ZeroClipBoard
+
+    $("#serifPreview").text(getSmiley()); // Update the previews
+    $("#sanSerifPreview").text(getSmiley()); // ...
+
+    // Do this every time the Smiley changes
+    var smileyUpdate = function() {
+        fontScale(); // Scale the font
+        $("title").text(getSmiley()); // Update the html title
+        $("#serifPreview").text(getSmiley()); // Update the previews
+        $("#sanSerifPreview").text(getSmiley()); // ...
+        $('.part').tooltip({"placement":"bottom"}); // Reinitialize when the smiley is updated. Due to adding/removing cheecks
+        setZeroClipboardAction();
         setHoverAction(); // Reinitialize hover action
     }
 
@@ -62,7 +70,7 @@ $(document).ready(function(){
     var cheeckMemory = $("#rightCheeck").text();
 
     // Set the default options html in a variable
-    var defaultOption = '<h3>Default Option</h3>Text';
+    var defaultOption = '<h3>Customize!</h3>Click on a peice of the large smiley to the left to start customizing!';
 
     $('#options').html(defaultOption); // replace on page before start
 
