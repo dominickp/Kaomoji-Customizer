@@ -29,14 +29,25 @@ $(document).ready(function(){
         fontScale(); // Scale the font
         $("title").text(getSmiley()); // Update the html title
         $('.part').tooltip({"placement":"bottom"}); // Reinitialize when the smiley is updated. Due to adding/removing cheecks
+
+        // Initialize ZeroClipboard
+        $("a#clipBoard").zclip({
+            path:'js/ZeroClipboard.swf',
+            copy:getSmiley(),
+            beforeCopy:function(){
+                $('#bigSmiley').css('color','red');
+            },
+            afterCopy:function(){
+                $('#bigSmiley').css('color','#333');
+                $(this).next('.check').show();
+            }
+        });
     }
 
-    var cheeckMemory = ''; // Declare this variable which will be used to hang on to the cheeck when flipping left to right
+    var cheeckMemory = $("#rightCheeck").text(); // Declare this variable which will be used to hang on to the cheeck when flipping left to right. Set as inital left cheeck for default.
 
     var defaultOption = '<h3>Default Option</h3>Text'; // Set the default options html in a variable
     $('#options').html(defaultOption); // replace on page before start
-
-
 
     // This function allows you to click off of the smiley to clear the selection
     $(".clickWrapper").click(function(){
@@ -47,7 +58,8 @@ $(document).ready(function(){
     });
 
     // When you click on a .part, display some options
-    $(".part").click(function() {
+    //$(".part").click(function() {
+    $("#bigSmiley").on( "click", ".part", function() {
         var optionsBox = $( "div#options" );
         var pairType = $(this).attr("data-pairType"); // Get data-pairtype
 
