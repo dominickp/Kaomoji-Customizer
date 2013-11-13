@@ -23,10 +23,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="index.html" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="index.html" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="140" column="99" selection-start="5793" selection-end="5793" vertical-scroll-proportion="-22.84" vertical-offset="1669" max-vertical-offset="2496">
+            <state line="4" column="37" selection-start="141" selection-end="141" vertical-scroll-proportion="0.07738815" vertical-offset="0" max-vertical-offset="2496">
               <folding />
             </state>
           </provider>
@@ -61,10 +61,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="parts.js" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="parts.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/js/parts.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="82" column="125" selection-start="3824" selection-end="3824" vertical-scroll-proportion="0.9201878" vertical-offset="528" max-vertical-offset="1424">
+            <state line="37" column="20" selection-start="1346" selection-end="1346" vertical-scroll-proportion="0.0" vertical-offset="528" max-vertical-offset="1424">
               <folding />
             </state>
           </provider>
@@ -85,8 +85,8 @@
         <option value="$PROJECT_DIR$/js/autoshrink.js" />
         <option value="$PROJECT_DIR$/js/jquery.zclip.min.js" />
         <option value="$PROJECT_DIR$/js/bigsmiley.js" />
-        <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/js/parts.js" />
+        <option value="$PROJECT_DIR$/index.html" />
       </list>
     </option>
   </component>
@@ -331,16 +331,16 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/index.html">
+    <entry file="file://$PROJECT_DIR$/js/parts.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="140" column="99" selection-start="5793" selection-end="5793" vertical-scroll-proportion="-22.84" vertical-offset="1669" max-vertical-offset="2496">
+        <state line="37" column="20" selection-start="1346" selection-end="1346" vertical-scroll-proportion="0.0" vertical-offset="528" max-vertical-offset="1424">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/js/parts.js">
+    <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="82" column="125" selection-start="3824" selection-end="3824" vertical-scroll-proportion="0.9201878" vertical-offset="528" max-vertical-offset="1424">
+        <state line="4" column="37" selection-start="141" selection-end="141" vertical-scroll-proportion="0.07738815" vertical-offset="0" max-vertical-offset="2496">
           <folding />
         </state>
       </provider>
