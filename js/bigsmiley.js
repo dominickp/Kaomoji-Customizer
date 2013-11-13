@@ -44,9 +44,12 @@ $(document).ready(function(){
         });
     }
 
-    var cheeckMemory = $("#rightCheeck").text(); // Declare this variable which will be used to hang on to the cheeck when flipping left to right. Set as inital left cheeck for default.
+    // Declare this variable which will be used to hang on to the cheeck when flipping left to right. Set as inital left cheeck for default.
+    var cheeckMemory = $("#rightCheeck").text();
 
-    var defaultOption = '<h3>Default Option</h3>Text'; // Set the default options html in a variable
+    // Set the default options html in a variable
+    var defaultOption = '<h3>Default Option</h3>Text';
+
     $('#options').html(defaultOption); // replace on page before start
 
     // This function allows you to click off of the smiley to clear the selection
@@ -65,7 +68,6 @@ $(document).ready(function(){
 
         $(".part").removeClass('hold');
         $('*[data-pairType="' + pairType + '"]').addClass('hold');
-
 
         var partsList = $(document.createElement('ul')).addClass('partPicker').addClass(pairType);
 
@@ -103,14 +105,11 @@ $(document).ready(function(){
             } else {
                 li.html(value);
             }
-
             partsList.append(li);
         }).promise().done(function () {
             $('#options').html(partsList);
             $('#options').prepend('<h4>'+partsTitle+' parts</h4>');
         });
-
-
     });
 
     // This function looks for any .paired elements, then looks for any others that match the data-pairType value and changes them on hover.
@@ -149,8 +148,6 @@ $(document).ready(function(){
         smileyUpdate(); // Run smiley update function
     });
 
-
-
     // Turn right and left logic
     $("#turnLeft").click(function(){
         $("#leftSpacer").remove(); // Check to see if that spacer is already there, if so, don't add another one.
@@ -166,8 +163,6 @@ $(document).ready(function(){
         }
 
         $("#rightCheeck").remove(); // Remove the right cheeck if facing left
-        //$("#leftBracket").after("<span id='leftSpacer' class='part spacer'>&nbsp;</span>"); // Add the new spacer
-        //$("#rightSpacer").remove(); // Remove the old one
         smileyUpdate(); // Run smiley update function
     });
 
@@ -185,8 +180,6 @@ $(document).ready(function(){
         }
 
         $("#leftCheeck").remove(); // Remove the left cheeck if facing left
-        // $("#rightBracket").before("<span id='rightSpacer' class='part spacer'>&nbsp;</span>"); // Add the new spacer
-        //$("#leftSpacer").remove(); // Remove the old one
         smileyUpdate(); // Run smiley update function
     });
 
