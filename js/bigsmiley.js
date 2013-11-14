@@ -6,6 +6,11 @@ $(document).ready(function(){
     // Store the initial bigSmiley html content for later
     $('#bigSmiley').data( 'defaultBigSmiley', $('#bigSmiley').html() );
 
+    // Click about modal
+    $("#helpAboutBtn").click(function(){
+        $('#helpAbout').animate({bottom: '0px'}, 600);
+    });
+
     // Function for resizing the smiley based on length
     var fontScale = function() {
         var currentSmiley = $('#bigSmiley').children().text();
@@ -78,6 +83,7 @@ $(document).ready(function(){
     $(".clickWrapper").click(function(){
         $(".part").removeClass('hold');
         $('#options').html(defaultOption);
+        $('#helpAbout').animate({bottom: '-1000px'}, 600);
     }).children().click(function(e) {
         return false;
     });
