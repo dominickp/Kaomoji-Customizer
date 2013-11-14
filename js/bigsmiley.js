@@ -62,9 +62,6 @@ $(document).ready(function(){
         $('.part').tooltip({"placement":"bottom"}); // Reinitialize when the smiley is updated. Due to adding/removing cheecks
         setZeroClipboardAction();
         setHoverAction(); // Reinitialize hover action
-
-        var myURL = document.location;
-        document.location = myURL + "?a=parameter";
     }
 
     // Declare this variable which will be used to hang on to the cheeck when flipping left to right. Set as inital left cheeck for default.
