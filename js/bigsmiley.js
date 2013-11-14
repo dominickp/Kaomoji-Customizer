@@ -62,10 +62,15 @@ $(document).ready(function(){
         $('.part').tooltip({"placement":"bottom"}); // Reinitialize when the smiley is updated. Due to adding/removing cheecks
         setZeroClipboardAction();
         setHoverAction(); // Reinitialize hover action
+
+        var myURL = document.location;
+        document.location = myURL + "?a=parameter";
     }
 
     // Declare this variable which will be used to hang on to the cheeck when flipping left to right. Set as inital left cheeck for default.
     var cheeckMemory = $("#rightCheeck").text();
+    var leftArmMemory = $("#leftArm-left").text();
+    var rightArmMemory = $("#leftArm-left").text();
 
     // Set the default options html in a variable
     var defaultOption = '<h3>Customize!</h3>Click on a peice of the large smiley to the left to start customizing!';
@@ -111,6 +116,12 @@ $(document).ready(function(){
         } else if(pairType == 'rightFlair'){
             partsArray = rightFlair_parts;
             partsTitle = 'Right Flair';
+        } else if(pairType == 'leftArm'){
+            partsArray = leftArm_parts;
+            partsTitle = 'Arms (left facing)';
+        } else if(pairType == 'rightArm'){
+            partsArray = rightArm_parts;
+            partsTitle = 'Arms (right facing)';
         }
 
         // Put those parts into the options div
@@ -138,6 +149,8 @@ $(document).ready(function(){
 
         // Update cheeckMemory so the alignment functions can know what to place
         if(selectedType == 'cheeck'){ cheeckMemory = $(this).text(); }
+        if(selectedType == 'leftArm'){ leftArmMemory = $(this).text(); }
+        if(selectedType == 'rightArm'){ rightArmMemory = $(this).text(); }
 
         // Update on the big smiley
         if ($(this).hasClass('pair')){
@@ -171,6 +184,13 @@ $(document).ready(function(){
             }
         }
         $("#rightCheeck").remove(); // Remove the right cheeck if facing left
+
+        $(".rightArms").remove();
+        $(".leftArms").remove();
+        $("#rightBracket").after('<span class="part paired right rightArms" id="rightArm-right" data-pairType="rightArm" title="Arms (right facing)">' + rightArmMemory + '</span>');
+        $("#leftBracket").after('<span class="part paired right rightArms" id="rightArm-left" data-pairType="rightArm" title="Arms (right facing)">' + rightArmMemory + '</span>');
+
+
         smileyUpdate(); // Run smiley update function
     });
 
@@ -185,6 +205,12 @@ $(document).ready(function(){
             }
         }
         $("#leftCheeck").remove(); // Remove the left cheeck if facing left
+
+        $(".rightArms").remove();
+        $(".leftArms").remove();
+        $("#rightBracket").before('<span class="part paired left leftArms" id="leftArm-right" data-pairType="leftArm" title="Arms (left facing)">' + leftArmMemory + '</span>');
+        $("#leftBracket").before('<span class="part paired left leftArms" id="leftArm-left" data-pairType="leftArm" title="Arms (left facing)">' + leftArmMemory + '</span>');
+
         smileyUpdate(); // Run smiley update function
     });
 
@@ -197,6 +223,12 @@ $(document).ready(function(){
         if($('#leftCheeck').length == 0){
             $("#leftBracket").after('<span class="part paired left" data-pairType="cheeck" id="leftCheeck" title="Cheecks">'+cheeckMemory+'</span>');
         }
+
+        $(".rightArms").remove();
+        $(".leftArms").remove();
+        $("#leftBracket").before('<span class="part paired left leftArms" id="leftArm-left" data-pairType="leftArm" title="Arms (left facing)">' + leftArmMemory + '</span>');
+        $("#rightBracket").after('<span class="part paired right rightArms" id="rightArm-right" data-pairType="rightArm" title="Arms (right facing)">' + rightArmMemory + '</span>');
+
         smileyUpdate(); // Run smiley update function
     });
 
