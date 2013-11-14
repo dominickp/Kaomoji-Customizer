@@ -72,7 +72,7 @@ $(document).ready(function(){
     // Declare this variable which will be used to hang on to the cheeck when flipping left to right. Set as inital left cheeck for default.
     var cheeckMemory = $("#rightCheeck").text();
     var leftArmMemory = $("#leftArm-left").text();
-    var rightArmMemory = $("#leftArm-left").text();
+    var rightArmMemory = 'ノ'; // Start with this one, since we don't want to default to a left facing one or nothing
 
     // Set the default options html in a variable
     var defaultOption = '<h3>Customize!</h3>Click on a peice of the large smiley to the left to start customizing!';
