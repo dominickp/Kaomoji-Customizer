@@ -10,5 +10,5 @@ $(document).ready(function(){
     $("#helpAboutBtn").click(function(){
         $('#helpAbout').animate({bottom: '0px'}, 600);
     });
-    
+
 });
