@@ -80,6 +80,8 @@ $(document).ready(function(){
     // When you click on a .part, display some options
     //$(".part").click(function() {
     $("#bigSmiley").on( "click", ".part", function() {
+        var currentPart = $(this);
+       // console.log(currentPart.text());
         var optionsBox = $( "div#options" );
         var pairType = $(this).attr("data-pairType"); // Get data-pairtype
 
@@ -133,21 +135,28 @@ $(document).ready(function(){
             $('#options').html(partsList);
             $('#options').prepend('<h4>'+partsTitle+' parts</h4>');
         });
+
+        inUse = false; // Clear inUse variable, resetting the hover preview action.
+        // Set the initial part for reference
+        $('.partPicker > li:contains('+currentPart.text()+')').addClass("previousPart");
+
     });
 
-    // Update bigSmiley logic
-    $(document).on( "click", 'ul.partPicker > li', function() {
-        selectedType = $(this).attr("data-pairType"); // Get the part's type
+    var inUse = false; // If true, locks down the hover preview action
+
+
+    var setBigCharacter = function(part){
+        selectedType = part.attr("data-pairType"); // Get the part's type
 
         // Update cheeckMemory so the alignment functions can know what to place
-        if(selectedType == 'cheeck'){ cheeckMemory = $(this).text(); }
-        if(selectedType == 'leftArm'){ leftArmMemory = $(this).text(); }
-        if(selectedType == 'rightArm'){ rightArmMemory = $(this).text(); }
+        if(selectedType == 'cheeck'){ cheeckMemory = part.text(); }
+        if(selectedType == 'leftArm'){ leftArmMemory = part.text(); }
+        if(selectedType == 'rightArm'){ rightArmMemory = part.text(); }
 
         // Update on the big smiley
-        if ($(this).hasClass('pair')){
+        if (part.hasClass('pair')){
             var counter = 0;
-            $(this).children().each(function(key, value){
+            part.children().each(function(key, value){
                 counter++; // Incriment to tell difference between left and right
                 selectedPart = $(value).text(); // Get the part
                 // Left part operation
@@ -158,10 +167,31 @@ $(document).ready(function(){
                 }
             });
         } else {
-            selectedPart = $(this).text(); // Get the part
+            selectedPart = part.text(); // Get the part
             $('#bigSmiley *[data-pairType="' + selectedType + '"]').text(selectedPart);
         }
         smileyUpdate(); // Run smiley update function
+
+    }
+
+    // Update bigSmiley if you hover over a part
+    $(document).on( "mouseenter mouseleave", 'ul.partPicker > li', function() {
+        if(inUse == false){
+            setBigCharacter($(this));
+        }
+    });
+
+    // Locking / toggling mechanism for clicking a part
+    $(document).on( "click", 'ul.partPicker > li', function() {
+        setBigCharacter($(this));
+        $(this).toggleClass("inUse").siblings().removeClass('inUse');
+        $(".previousPart").removeClass('previousPart');
+        if($(".inUse").length > 0){
+            inUse = true;
+        } else {
+            inUse = false;
+        }
+
     });
 
     // Turn right and left logic

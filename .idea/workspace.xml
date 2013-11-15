@@ -2,9 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="899f6b57-1d5a-41cb-a3a7-e615bad30ace" name="Default" comment="">
-      <change type="MOVED" beforePath="C:\wamp\www\p3.kaomoj.in\js\bigsmiley.js" afterPath="$PROJECT_DIR$/js/customizer.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/customizer.js" afterPath="$PROJECT_DIR$/js/customizer.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/initialize.js" afterPath="$PROJECT_DIR$/js/initialize.js" />
     </list>
     <ignored path="p3.kaomoj.in.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -30,7 +29,7 @@
       <file leaf-file-name="index.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="139" column="43" selection-start="5920" selection-end="5920" vertical-scroll-proportion="-2.56" vertical-offset="2160" max-vertical-offset="3376">
+            <state line="90" column="29" selection-start="2614" selection-end="2614" vertical-scroll-proportion="-21.12" vertical-offset="912" max-vertical-offset="3648">
               <folding />
             </state>
           </provider>
@@ -48,7 +47,7 @@
       <file leaf-file-name="customizer.js" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/js/customizer.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="146" column="35" selection-start="6044" selection-end="6044" vertical-scroll-proportion="0.370068" vertical-offset="2064" max-vertical-offset="3952">
+            <state line="185" column="33" selection-start="7570" selection-end="7570" vertical-scroll-proportion="0.43537414" vertical-offset="2640" max-vertical-offset="4432">
               <folding />
             </state>
           </provider>
@@ -104,9 +103,10 @@
         <option value="$PROJECT_DIR$/js/jquery.zclip.min.js" />
         <option value="$PROJECT_DIR$/js/parts.js" />
         <option value="$PROJECT_DIR$/.gitignore" />
-        <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/js/bigsmiley.js" />
         <option value="$PROJECT_DIR$/js/initialize.js" />
+        <option value="$PROJECT_DIR$/index.html" />
+        <option value="$PROJECT_DIR$/js/customizer.js" />
       </list>
     </option>
   </component>
@@ -248,7 +248,7 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="3" />
+      <option name="time" value="4" />
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
@@ -343,13 +343,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="139" column="43" selection-start="5920" selection-end="5920" vertical-scroll-proportion="-2.56" vertical-offset="2160" max-vertical-offset="3520">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/js/initialize.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="12" column="0" selection-start="366" selection-end="366" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="304">
@@ -357,9 +350,16 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="90" column="29" selection-start="2614" selection-end="2614" vertical-scroll-proportion="-21.12" vertical-offset="912" max-vertical-offset="3648">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/js/customizer.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="146" column="35" selection-start="6044" selection-end="6044" vertical-scroll-proportion="0.370068" vertical-offset="2064" max-vertical-offset="3952">
+        <state line="185" column="33" selection-start="7570" selection-end="7570" vertical-scroll-proportion="0.43537414" vertical-offset="2640" max-vertical-offset="4432">
           <folding />
         </state>
       </provider>
