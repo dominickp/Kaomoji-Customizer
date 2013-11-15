@@ -8,6 +8,16 @@ html,body,.clickWrapper{
     text-align:center;
     width:80%;
 }
+h1{
+    font-family: 'Raleway', sans-serif;
+    font-size:60px;
+    line-height: 80%;
+    margin:0;
+}
+.thickText{
+    font-family: 'Passion One', cursive;
+    fotn-size:40px;
+}
 .noSelect{
     -webkit-touch-callout: none;
     -webkit-user-select: none;

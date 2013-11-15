@@ -139,7 +139,7 @@ $(document).ready(function(){
 
         inUse = false; // Clear inUse variable, resetting the hover preview action.
         // Set the initial part for reference
-        $('.partPicker > li:contains('+currentPart.text()+')').addClass("previousPart");
+        $('.partPicker > li:contains("'+currentPart.text()+'")').addClass("previousPart");
 
     });
 
