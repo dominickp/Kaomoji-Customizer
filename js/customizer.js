@@ -69,13 +69,14 @@ $(document).ready(function(){
     $('#options').html(defaultOption); // replace on page before start
 
     // This function allows you to click off of the smiley to clear the selection
-    $(".clickWrapper").click(function(){
+   $(".clickWrapper").click(function(){
         $(".part").removeClass('hold');
         $('#options').html(defaultOption);
         $('#helpAbout').animate({bottom: '-1000px'}, 600);
     }).children().click(function(e) {
         return false;
     });
+
 
     // When you click on a .part, display some options
     //$(".part").click(function() {

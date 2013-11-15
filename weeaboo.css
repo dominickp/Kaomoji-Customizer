@@ -1,6 +1,9 @@
 html,body,.clickWrapper{
     height:100%;
 }
+.clickWrapper{
+    padding-top: 10%;
+}
 .customizer{
     text-align:center;
     width:80%;
@@ -20,7 +23,7 @@ html,body,.clickWrapper{
     white-space-collapse: discard;
     font-size:0;
     height: 180px;
-    padding-top: 10%;
+
     /* border-bottom: 1px solid #DDD; */
 }
 #bigSmiley .part{
