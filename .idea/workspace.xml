@@ -2,7 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="899f6b57-1d5a-41cb-a3a7-e615bad30ace" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/initialize.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/bigsmiley.js" afterPath="$PROJECT_DIR$/js/bigsmiley.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="p3.kaomoj.in.iws" />
@@ -29,7 +31,16 @@
       <file leaf-file-name="index.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="198" column="255" selection-start="9554" selection-end="9554" vertical-scroll-proportion="-25.4" vertical-offset="2533" max-vertical-offset="3360">
+            <state line="139" column="43" selection-start="5920" selection-end="5920" vertical-scroll-proportion="-2.56" vertical-offset="2160" max-vertical-offset="3520">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="initialize.js" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/js/initialize.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="12" column="4" selection-start="370" selection-end="370" vertical-scroll-proportion="0.26122448" vertical-offset="0" max-vertical-offset="735">
               <folding />
             </state>
           </provider>
@@ -38,7 +49,7 @@
       <file leaf-file-name="bigsmiley.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/js/bigsmiley.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="84" column="42" selection-start="3483" selection-end="3483" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="4000">
+            <state line="1" column="0" selection-start="30" selection-end="30" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="3952">
               <folding />
             </state>
           </provider>
@@ -53,10 +64,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name=".gitignore" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name=".gitignore" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/.gitignore">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="217" column="0" selection-start="2652" selection-end="2652" vertical-scroll-proportion="0.90751445" vertical-offset="2687" max-vertical-offset="3568">
+            <state line="217" column="0" selection-start="2652" selection-end="2652" vertical-scroll-proportion="0.0" vertical-offset="3472" max-vertical-offset="3568">
               <folding />
             </state>
           </provider>
@@ -93,18 +104,19 @@
         <option value="$PROJECT_DIR$/js/autoshrink.js" />
         <option value="$PROJECT_DIR$/js/jquery.zclip.min.js" />
         <option value="$PROJECT_DIR$/js/parts.js" />
+        <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/js/bigsmiley.js" />
-        <option value="$PROJECT_DIR$/.gitignore" />
+        <option value="$PROJECT_DIR$/js/initialize.js" />
       </list>
     </option>
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" interpreter_name="PHP 5.4.12" />
   <component name="ProjectFrameBounds">
-    <option name="x" value="203" />
-    <option name="y" value="13" />
-    <option name="width" value="1356" />
-    <option name="height" value="1017" />
+    <option name="x" value="1914" />
+    <option name="y" value="-6" />
+    <option name="width" value="1452" />
+    <option name="height" value="912" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -132,6 +144,7 @@
       <sortByType />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -150,15 +163,29 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="p3.kaomoj.in" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="p3.kaomoj.in" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="js" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="options.splitter.main.proportions" value="0.3" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="options.lastSelected" value="preferences.sourceCode.PHP" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="FullScreen" value="false" />
     <property name="options.searchVisible" value="true" />
     <property name="options.splitter.details.proportions" value="0.2" />
@@ -189,7 +216,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="203" y="13" width="1356" height="1017" extended-state="0" />
+    <frame x="1914" y="-6" width="1452" height="912" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -197,7 +224,7 @@
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.19762258" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.17862266" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
@@ -226,13 +253,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/js/parts.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="50" column="0" selection-start="1902" selection-end="2116" vertical-scroll-proportion="0.0" vertical-offset="572" max-vertical-offset="1424">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state line="88" column="48" selection-start="3440" selection-end="3440" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1616">
@@ -317,23 +337,30 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="217" column="0" selection-start="2652" selection-end="2652" vertical-scroll-proportion="0.0" vertical-offset="2810" max-vertical-offset="3568">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="198" column="255" selection-start="9554" selection-end="9554" vertical-scroll-proportion="-25.4" vertical-offset="2533" max-vertical-offset="3360">
+        <state line="139" column="43" selection-start="5920" selection-end="5920" vertical-scroll-proportion="-2.56" vertical-offset="2160" max-vertical-offset="3520">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/js/bigsmiley.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="84" column="42" selection-start="3483" selection-end="3483" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="4000">
+        <state line="1" column="0" selection-start="30" selection-end="30" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="3952">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/.gitignore">
+    <entry file="file://$PROJECT_DIR$/js/initialize.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="217" column="0" selection-start="2652" selection-end="2652" vertical-scroll-proportion="0.90751445" vertical-offset="2687" max-vertical-offset="3568">
+        <state line="12" column="4" selection-start="370" selection-end="370" vertical-scroll-proportion="0.26122448" vertical-offset="0" max-vertical-offset="735">
           <folding />
         </state>
       </provider>
