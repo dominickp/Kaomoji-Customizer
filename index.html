@@ -3,149 +3,9 @@
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
     <title>Japanese Smiley Customizer</title>
-    <style>
-        html,body,.clickWrapper{
-            height:100%;
-        }
-        .customizer{
-            text-align:center;
-            width:80%;
-        }
-        .noSelect{
-            -webkit-touch-callout: none;
-            -webkit-user-select: none;
-            -khtml-user-select: none;
-            -moz-user-select: none;
-            -ms-user-select: none;
-            user-select: none;
-        }
-        #bigSmiley{
-            font-size:100px;
-            font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
-            margin:auto;
-            white-space-collapse: discard;
-            font-size:0;
-            height: 180px;
-            /* border-bottom: 1px solid #DDD; */
-        }
-        #bigSmiley .part{
-            border-bottom:10px solid #CCC;
-            padding-bottom: 20px;
-            cursor: pointer;
-            margin: 1px;
-            font-size: 100px;
-            -webkit-touch-callout: none;
-            -webkit-user-select: none;
-            -khtml-user-select: none;
-            -moz-user-select: none;
-            -ms-user-select: none;
-            user-select: none;
-            -webkit-transition: border-color 0.3s ease-in-out;
-            -moz-transition: border-color 0.3s ease-in-out;
-            -o-transition: border-color 0.3s ease-in-out;
-            transition: border-color 0.3s ease-in-out;
-        }
-        #bigSmiley .part:hover, #bigSmiley .part.active{
-            border-bottom:10px solid orange;
-            color:#666;
-        }
-
-        #bigSmiley .part.hold{
-            border-bottom:10px solid red;
-            color:#666;
-        }
-        #bigSmiley .part.spacer{
-            border:0;
-        }
-        .partPicker{
-            list-style: none;
-            margin:0;
-            padding:0;
-        }
-        .partPicker li{
-            color: #333;
-            background-color: #fff;
-            border-color: #ccc;
-            display:inline-block;
-            border:1px solid #999;
-            margin:0 3px;
-            margin-bottom: 10px;
-            padding:2px 8px;
-            border-radius:3px;
-            font-size:16px;
-            -webkit-touch-callout: none;
-            -webkit-user-select: none;
-            -khtml-user-select: none;
-            -moz-user-select: none;
-            -ms-user-select: none;
-            user-select: none;
-        }
-        .partPicker li:hover{
-            cursor: pointer;
-            background-color: #fcf8e3;
-        }
-        .partPicker li.inUse{
-            border-color:crimson;
-            border-width: 2px;
-        }
-        .partPicker li.previousPart{
-            border-color:dodgerblue;
-            border-width: 2px;
-        }
-        div#optionsContainer{
-            position: fixed;
-            right: 0;
-            height: 100%;
-            width:20%;
-            z-index: 99999;
-            padding:15px;
-            min-width: 200px;
-        }
-        .greyPanel{
-            background: rgb(237,237,237); /* Old browsers */
-            background: -moz-linear-gradient(left,  rgba(237,237,237,1) 0%, rgba(246,246,246,1) 53%, rgba(255,255,255,1) 100%); /* FF3.6+ */
-            background: -webkit-gradient(linear, left top, right top, color-stop(0%,rgba(237,237,237,1)), color-stop(53%,rgba(246,246,246,1)), color-stop(100%,rgba(255,255,255,1))); /* Chrome,Safari4+ */
-            background: -webkit-linear-gradient(left,  rgba(237,237,237,1) 0%,rgba(246,246,246,1) 53%,rgba(255,255,255,1) 100%); /* Chrome10+,Safari5.1+ */
-            background: -o-linear-gradient(left,  rgba(237,237,237,1) 0%,rgba(246,246,246,1) 53%,rgba(255,255,255,1) 100%); /* Opera 11.10+ */
-            background: -ms-linear-gradient(left,  rgba(237,237,237,1) 0%,rgba(246,246,246,1) 53%,rgba(255,255,255,1) 100%); /* IE10+ */
-            background: linear-gradient(to right,  rgba(237,237,237,1) 0%,rgba(246,246,246,1) 53%,rgba(255,255,255,1) 100%); /* W3C */
-            filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ededed', endColorstr='#ffffff',GradientType=1 ); /* IE6-9 */
-            border-left: 1px solid #DDD;
-        }
-        #toolBar{
-            position: fixed;
-            bottom: 0;
-            width: 80%;
-            background-color: aliceblue;
-            border-top: 1px solid #DDD;
-            padding: 6px 10px;
-            line-height: 33px;
-            font-size: 12px;
-            color: #3a87ad;
-            z-index: 99;
-        }
-        #helpAbout{
-            position: fixed;
-            bottom: -1000px;
-            width: 60%;
-            margin-left: 10%;
-            padding: 20px;
-            padding-bottom: 80px;
-            border-radius: 10px;
-            border: 1px solid #CCC;
-            background: rgb(255,255,255); /* Old browsers */
-            background: -moz-linear-gradient(top,  rgba(255,255,255,1) 0%, rgba(246,246,246,1) 47%, rgba(237,237,237,1) 100%); /* FF3.6+ */
-            background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(255,255,255,1)), color-stop(47%,rgba(246,246,246,1)), color-stop(100%,rgba(237,237,237,1))); /* Chrome,Safari4+ */
-            background: -webkit-linear-gradient(top,  rgba(255,255,255,1) 0%,rgba(246,246,246,1) 47%,rgba(237,237,237,1) 100%); /* Chrome10+,Safari5.1+ */
-            background: -o-linear-gradient(top,  rgba(255,255,255,1) 0%,rgba(246,246,246,1) 47%,rgba(237,237,237,1) 100%); /* Opera 11.10+ */
-            background: -ms-linear-gradient(top,  rgba(255,255,255,1) 0%,rgba(246,246,246,1) 47%,rgba(237,237,237,1) 100%); /* IE10+ */
-            background: linear-gradient(to bottom,  rgba(255,255,255,1) 0%,rgba(246,246,246,1) 47%,rgba(237,237,237,1) 100%); /* W3C */
-            filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#ededed',GradientType=0 ); /* IE6-9 */
-
-        }
-    </style>
     <script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
     <link href="//netdna.bootstrapcdn.com/bootstrap/3.0.2/css/bootstrap.min.css" rel="stylesheet">
+    <link href="weeaboo.css" rel="stylesheet">
     <script src="//netdna.bootstrapcdn.com/bootstrap/3.0.2/js/bootstrap.min.js"></script>
     <script src="js/jquery.zclip.min.js"></script>
     <script src="js/parts.js"></script>
@@ -154,14 +14,15 @@
 
 </head>
 <body>
-<div id="toolBar">
-    <span class="pull-right"><a class="btn btn-default btn-xs" href="https://github.com/dominickp/p3.kaomoj.in" target="_blank">GitHub</a> - © 2013 Dominick Peluso - Project 3 for CSCI E-15</span>
 
+<div id="toolBar">
+    <span class="pull-right">
+        © 2013 Dominick Peluso - Project 3 for CSCI E-15 -
+        <a class="btn btn-default btn-xs" href="https://github.com/dominickp/p3.kaomoj.in" target="_blank">GitHub</a>
+    </span>
     <div class="btn-group">
         <button type="button" class="btn btn-default disabled" title="Small preview!"><span id="smallPreview"></span></button>
-
         <a class="btn btn-default" id="clipBoard"><span class="glyphicon glyphicon-list-alt"></span> Copy to Clipboard</a>
-
         <div class="btn-group dropup">
             <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
                 <span class="glyphicon glyphicon-star"></span> More
@@ -179,7 +40,7 @@
         You shouldn't see this!
     </div>
     <div id="subOptions" class="noSelect">
-        <h4>Options</h4>
+        <h4>Direction</h4>
         <p>
             <div class="btn-group btn-group-sm">
                 <a class="btn btn-default" id="turnRight" title="Turn Left"><span class="glyphicon glyphicon-arrow-left"></span></a>
@@ -209,10 +70,10 @@
     </div>
     <div id="helpAbout">
         <p class="lead">You're on your way to more emotive smileys! ✌(♥ヮ♥ )</p>
-        <p>Welcome to the Kaomoji / Japanese Smiley Customizer! This web page allows you to create and customizer fun, Japanese-style smileys called kaomoji. Kaomoji are made of various UTF-8 characters &mdash; so their appearance can differ depending on: the client who is viewing them, the character set of the website you're posting them on, and way the browse renders them. For this reason, I reccomend that you check the small preview on the bottom-left-hand of this web page to get a feel for how your smiley will look when in its small form. Once you're happy with your kaomoji, click the Copy to Clipboard button and share it with your friends!</p>
+        <p>Welcome to the Kaomoji / Japanese Smiley Customizer! This web page allows you to create and customizer fun, Japanese-style smileys called kaomoji. Kaomoji are made of various UTF-8 characters &mdash; so their appearance can differ depending on: the client who is viewing them, the character set of the website you're posting them on, and way the browse renders them. </p>
+        <p>I reccomend that you check the small preview on the bottom-left-hand of this web page to get a feel for how your smiley will look when in its small form. Once you're happy with your kaomoji, click the Copy to Clipboard button and share it with your friends!</p>
     </div>
 </div>
-
 
 </body>
 </html>

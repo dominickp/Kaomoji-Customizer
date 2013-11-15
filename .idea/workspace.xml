@@ -2,8 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="899f6b57-1d5a-41cb-a3a7-e615bad30ace" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/customizer.js" afterPath="$PROJECT_DIR$/js/customizer.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/weeaboo.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="p3.kaomoj.in.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -29,16 +30,25 @@
       <file leaf-file-name="index.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="42" column="44" selection-start="1313" selection-end="1313" vertical-scroll-proportion="-13.44" vertical-offset="336" max-vertical-offset="3712">
+            <state line="72" column="382" selection-start="4436" selection-end="4436" vertical-scroll-proportion="-19.2" vertical-offset="672" max-vertical-offset="1408">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="customizer.js" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="weeaboo.css" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/weeaboo.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="22" column="21" selection-start="486" selection-end="486" vertical-scroll-proportion="0.47891158" vertical-offset="0" max-vertical-offset="2352">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="customizer.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/js/customizer.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="8" column="6" selection-start="318" selection-end="318" vertical-scroll-proportion="0.17414966" vertical-offset="0" max-vertical-offset="4432">
+            <state line="135" column="63" selection-start="5588" selection-end="5590" vertical-scroll-proportion="-9.44" vertical-offset="1924" max-vertical-offset="4304">
               <folding />
             </state>
           </provider>
@@ -107,6 +117,7 @@
         <option value="$PROJECT_DIR$/js/initialize.js" />
         <option value="$PROJECT_DIR$/js/customizer.js" />
         <option value="$PROJECT_DIR$/index.html" />
+        <option value="$PROJECT_DIR$/weeaboo.css" />
       </list>
     </option>
   </component>
@@ -159,20 +170,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="p3.kaomoj.in" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="p3.kaomoj.in" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="p3.kaomoj.in" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="js" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -252,13 +249,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="88" column="48" selection-start="3440" selection-end="3440" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1616">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/js/customizer.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="3" column="3" selection-start="92" selection-end="92" vertical-scroll-proportion="0.0" vertical-offset="48" max-vertical-offset="2448">
@@ -350,16 +340,23 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/index.html">
+    <entry file="file://$PROJECT_DIR$/js/customizer.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="42" column="44" selection-start="1313" selection-end="1313" vertical-scroll-proportion="-13.44" vertical-offset="336" max-vertical-offset="3712">
+        <state line="135" column="63" selection-start="5588" selection-end="5590" vertical-scroll-proportion="-9.44" vertical-offset="1924" max-vertical-offset="4432">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/js/customizer.js">
+    <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="6" selection-start="318" selection-end="318" vertical-scroll-proportion="0.17414966" vertical-offset="0" max-vertical-offset="4432">
+        <state line="72" column="382" selection-start="4436" selection-end="4436" vertical-scroll-proportion="-19.2" vertical-offset="672" max-vertical-offset="1408">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/weeaboo.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="22" column="21" selection-start="486" selection-end="486" vertical-scroll-proportion="0.47891158" vertical-offset="0" max-vertical-offset="2352">
           <folding />
         </state>
       </provider>
