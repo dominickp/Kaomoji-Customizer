@@ -6,7 +6,7 @@ $(document).ready(function(){
         var length = currentSmiley.length
         var scaleFactor = 2;
         var size = 120 - ( length * scaleFactor ) + 'px';
-        console.log(size); // Log for debugging until I get this working nicely
+    //    console.log(size); // Log for debugging until I get this working nicely
         $("#bigSmiley > .part").css('font-size',size);
     }
 
