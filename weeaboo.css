@@ -11,12 +11,13 @@ html,body,.clickWrapper{
 h1{
     font-family: 'Raleway', sans-serif;
     font-size:60px;
-    line-height: 80%;
+    line-height: 75%;
     margin:0;
 }
 .thickText{
     font-family: 'Passion One', cursive;
-    fotn-size:40px;
+    font-size:48px;
+    text-transform: uppercase;
 }
 .noSelect{
     -webkit-touch-callout: none;
