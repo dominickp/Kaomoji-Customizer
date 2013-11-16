@@ -2,7 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="899f6b57-1d5a-41cb-a3a7-e615bad30ace" name="Default" comment="">
+      <change type="DELETED" beforePath="C:\wamp\www\p3.kaomoj.in\js\ZeroClipboard.swf" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\p3.kaomoj.in\js\jquery.zclip.min.js" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/customizer.js" afterPath="$PROJECT_DIR$/js/customizer.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/initialize.js" afterPath="$PROJECT_DIR$/js/initialize.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/weeaboo.css" afterPath="$PROJECT_DIR$/weeaboo.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="p3.kaomoj.in.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -25,28 +31,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="index.html" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="index.html" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="41" column="48" selection-start="2075" selection-end="2075" vertical-scroll-proportion="-16.24" vertical-offset="250" max-vertical-offset="1504">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="weeaboo.css" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/weeaboo.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="13" column="19" selection-start="219" selection-end="219" vertical-scroll-proportion="0.2829932" vertical-offset="0" max-vertical-offset="2576">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="customizer.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/js/customizer.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="147" column="0" selection-start="5911" selection-end="5911" vertical-scroll-proportion="-12.0" vertical-offset="2052" max-vertical-offset="4464">
+            <state line="24" column="122" selection-start="1162" selection-end="1162" vertical-scroll-proportion="0.46432889" vertical-offset="0" max-vertical-offset="1424">
               <folding />
             </state>
           </provider>
@@ -55,16 +43,25 @@
       <file leaf-file-name="initialize.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/js/initialize.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="12" column="0" selection-start="366" selection-end="366" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="304">
+            <state line="13" column="34" selection-start="394" selection-end="401" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="448">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="jquery.zclip.min.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/js/jquery.zclip.min.js">
+      <file leaf-file-name="weeaboo.css" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/weeaboo.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="11" column="7199" selection-start="7425" selection-end="7425" vertical-scroll-proportion="0.0" vertical-offset="176" max-vertical-offset="272">
+            <state line="163" column="23" selection-start="5170" selection-end="5170" vertical-scroll-proportion="0.0" vertical-offset="1788" max-vertical-offset="2720">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="customizer.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/js/customizer.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="42" column="0" selection-start="1734" selection-end="1734" vertical-scroll-proportion="-16.76" vertical-offset="253" max-vertical-offset="4080">
               <folding />
             </state>
           </provider>
@@ -82,7 +79,7 @@
       <file leaf-file-name="parts.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/js/parts.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="48" column="42" selection-start="1840" selection-end="1840" vertical-scroll-proportion="0.0" vertical-offset="609" max-vertical-offset="1680">
+            <state line="48" column="42" selection-start="1840" selection-end="1840" vertical-scroll-proportion="0.0" vertical-offset="768" max-vertical-offset="1584">
               <folding />
             </state>
           </provider>
@@ -111,20 +108,20 @@
         <option value="$PROJECT_DIR$/js/jquery.zclip.min.js" />
         <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/js/bigsmiley.js" />
-        <option value="$PROJECT_DIR$/js/initialize.js" />
-        <option value="$PROJECT_DIR$/js/customizer.js" />
-        <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/js/parts.js" />
+        <option value="$PROJECT_DIR$/js/customizer.js" />
+        <option value="$PROJECT_DIR$/js/initialize.js" />
         <option value="$PROJECT_DIR$/weeaboo.css" />
+        <option value="$PROJECT_DIR$/index.html" />
       </list>
     </option>
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" interpreter_name="PHP 5.4.12" />
   <component name="ProjectFrameBounds">
-    <option name="x" value="1914" />
-    <option name="y" value="-6" />
-    <option name="width" value="1452" />
-    <option name="height" value="912" />
+    <option name="x" value="203" />
+    <option name="y" value="13" />
+    <option name="width" value="1356" />
+    <option name="height" value="1017" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -171,6 +168,20 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="p3.kaomoj.in" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="p3.kaomoj.in" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="js" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
     </panes>
@@ -181,8 +192,8 @@
     <property name="options.lastSelected" value="preferences.sourceCode.PHP" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="FullScreen" value="false" />
-    <property name="options.searchVisible" value="true" />
     <property name="options.splitter.details.proportions" value="0.2" />
+    <property name="options.searchVisible" value="true" />
   </component>
   <component name="RunManager">
     <configuration default="true" type="PHPUnitRunConfigurationType" factoryName="PHPUnit">
@@ -210,7 +221,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="1914" y="-6" width="1452" height="912" extended-state="6" />
+    <frame x="203" y="13" width="1356" height="1017" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -218,7 +229,7 @@
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.17862266" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.17830609" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
@@ -243,13 +254,20 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="4" />
+      <option name="time" value="5" />
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/js/customizer.js">
+    <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="3" selection-start="92" selection-end="92" vertical-scroll-proportion="0.0" vertical-offset="48" max-vertical-offset="2448">
+        <state line="217" column="0" selection-start="2652" selection-end="2652" vertical-scroll-proportion="0.0" vertical-offset="3472" max-vertical-offset="3568">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/parts.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="48" column="42" selection-start="1840" selection-end="1840" vertical-scroll-proportion="0.0" vertical-offset="768" max-vertical-offset="1584">
           <folding />
         </state>
       </provider>
@@ -275,13 +293,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/js/customizer.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="77" column="29" selection-start="3475" selection-end="3475" vertical-scroll-proportion="0.0" vertical-offset="1232" max-vertical-offset="2832">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
         <state line="216" column="7" selection-start="2651" selection-end="2651" vertical-scroll-proportion="0.0" vertical-offset="2780" max-vertical-offset="3552">
@@ -303,44 +314,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/js/customizer.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="96">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/jquery.zclip.min.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="7199" selection-start="7425" selection-end="7425" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1136">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
         <state line="217" column="0" selection-start="2652" selection-end="2652" vertical-scroll-proportion="0.0" vertical-offset="2810" max-vertical-offset="3568">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/initialize.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="0" selection-start="366" selection-end="366" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="304">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/customizer.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="147" column="0" selection-start="5911" selection-end="5911" vertical-scroll-proportion="-12.0" vertical-offset="2052" max-vertical-offset="4464">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="41" column="48" selection-start="2075" selection-end="2075" vertical-scroll-proportion="-16.24" vertical-offset="250" max-vertical-offset="1504">
           <folding />
         </state>
       </provider>
@@ -352,9 +328,30 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/js/customizer.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="42" column="0" selection-start="1734" selection-end="1734" vertical-scroll-proportion="-16.76" vertical-offset="253" max-vertical-offset="4080">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/initialize.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="13" column="34" selection-start="394" selection-end="401" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="448">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/weeaboo.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="19" selection-start="219" selection-end="219" vertical-scroll-proportion="0.2829932" vertical-offset="0" max-vertical-offset="2576">
+        <state line="163" column="23" selection-start="5170" selection-end="5170" vertical-scroll-proportion="0.0" vertical-offset="1788" max-vertical-offset="2720">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="24" column="122" selection-start="1162" selection-end="1162" vertical-scroll-proportion="0.46432889" vertical-offset="0" max-vertical-offset="1424">
           <folding />
         </state>
       </provider>

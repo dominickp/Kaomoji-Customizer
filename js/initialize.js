@@ -11,4 +11,13 @@ $(document).ready(function(){
         $('#helpAbout').animate({bottom: '0px'}, 600);
     });
 
+    function selectAllText(textbox) {
+        textbox.focus();
+        textbox.select();
+    }
+
+    // Select button logic
+    $('#clipBoard').click(function() {
+        selectAllText($("#smallPreview"))
+    });
 });

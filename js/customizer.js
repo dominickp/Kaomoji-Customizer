@@ -30,21 +30,7 @@ $(document).ready(function(){
     }
     setHoverAction(); // Initialize hover action
 
-    var setZeroClipboardAction = function() {
-        // Initialize ZeroClipboard
-        $("a#clipBoard").zclip({
-            path:'js/ZeroClipboard.swf',
-            copy:getSmiley(),
-            beforeCopy:function(){
-                $('#bigSmiley').css('color','#3276b1');
-            },
-            afterCopy:function(){
-                $('#bigSmiley').css('color','#333');
-                $(this).next('.check').show();
-            }
-        });
-    }
-    setZeroClipboardAction(); // Initialize ZeroClipBoard
+
 
     $("#smallPreview").text(getSmiley()); // Update the small preview
 
@@ -54,7 +40,6 @@ $(document).ready(function(){
         $("title").text(getSmiley()); // Update the html title
         $("#smallPreview").text(getSmiley()); // Update the small preview
         $('.part').tooltip({"placement":"bottom"}); // Reinitialize when the smiley is updated. Due to adding/removing cheecks
-        setZeroClipboardAction();
         setHoverAction(); // Reinitialize hover action
     }
 
