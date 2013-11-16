@@ -2,13 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="899f6b57-1d5a-41cb-a3a7-e615bad30ace" name="Default" comment="">
-      <change type="DELETED" beforePath="C:\wamp\www\p3.kaomoj.in\js\ZeroClipboard.swf" afterPath="" />
-      <change type="DELETED" beforePath="C:\wamp\www\p3.kaomoj.in\js\jquery.zclip.min.js" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/customizer.js" afterPath="$PROJECT_DIR$/js/customizer.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/initialize.js" afterPath="$PROJECT_DIR$/js/initialize.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/weeaboo.css" afterPath="$PROJECT_DIR$/weeaboo.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="p3.kaomoj.in.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -34,7 +28,7 @@
       <file leaf-file-name="index.html" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="24" column="122" selection-start="1162" selection-end="1162" vertical-scroll-proportion="0.46432889" vertical-offset="0" max-vertical-offset="1424">
+            <state line="22" column="50" selection-start="1018" selection-end="1018" vertical-scroll-proportion="0.42563483" vertical-offset="0" max-vertical-offset="1424">
               <folding />
             </state>
           </provider>
@@ -351,7 +345,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="24" column="122" selection-start="1162" selection-end="1162" vertical-scroll-proportion="0.46432889" vertical-offset="0" max-vertical-offset="1424">
+        <state line="22" column="50" selection-start="1018" selection-end="1018" vertical-scroll-proportion="0.42563483" vertical-offset="0" max-vertical-offset="1424">
           <folding />
         </state>
       </provider>
