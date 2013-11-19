@@ -148,14 +148,22 @@ div#optionsContainer{
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#ededed',GradientType=0 );
 }
 #smallPreview{
-    margin-right:10px;
+    margin-right: 10px;
     margin-left: 5px;
     border: 0;
     background: none;
-    height: auto;
     display: inline;
     line-height: 100%;
     vertical-align: bottom;
     resize: none;
     text-align: center;
+    font-size: 16px;
+    height: 28px;
+    margin: 10px;
+    width:80%;
+}
+.smallPreviewContainer{
+    text-align:center;
+    margin-top:50px;
+    width:80%;
 }

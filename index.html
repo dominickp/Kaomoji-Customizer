@@ -20,19 +20,11 @@
         © 2013 Dominick Peluso - Project 3 for CSCI E-15 -
         <a class="btn btn-default btn-xs" href="https://github.com/dominickp/p3.kaomoj.in" target="_blank">GitHub</a>
     </span>
-    <textarea id="smallPreview" spellcheck="false"></textarea>
-    <div class="btn-group">
-        <a class="btn btn-default" id="clipBoard"><span class="glyphicon glyphicon-list-alt"></span> Select Current Smiley</a>
-        <div class="btn-group dropup">
-            <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
-                <span class="glyphicon glyphicon-star"></span> More
-                <span class="caret"></span>
-            </button>
-            <ul class="dropdown-menu">
-                <li><a href="http://dominick.p.elu.so/fun/kaomoji/" target="_blank"><span class="glyphicon glyphicon-tasks"></span> Batch Kaomoji Generator</a></li>
-                <li><a href="#" id="helpAboutBtn"><span class="glyphicon glyphicon-info-sign"></span> Help / About</a></li>
-            </ul>
-        </div>
+
+    <div class="btn-group btn-group-sm">
+        <a class="btn btn-default" href="http://dominick.p.elu.so/fun/kaomoji/" target="_blank"><span class="glyphicon glyphicon-tasks"></span> Batch Kaomoji Generator</a>
+        <a class="btn btn-default" href="#" id="helpAboutBtn"><span class="glyphicon glyphicon-info-sign"></span> Help / About</a>
+
     </div>
 </div>
 <div id="optionsContainer" class="greyPanel noSelect">
@@ -71,6 +63,11 @@
             <span class="part right" data-pairType="rightFlair" id="rightFlair" title="Right Flair">&nbsp;</span>
             <div class="clearfix"> </div>
         </div>
+    </div>
+    <div class="smallPreviewContainer">
+        <small>Small Preview:</small><br>
+        <textarea id="smallPreview" spellcheck="false"></textarea>
+        <p><a class="btn btn-default" id="clipBoard"><span class="glyphicon glyphicon-list-alt"></span> Select Current Smiley</a></p>
     </div>
     <div id="helpAbout">
         <p class="lead">You're on your way to more emotive smileys! ✌(♥ヮ♥ )</p>
