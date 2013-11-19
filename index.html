@@ -11,6 +11,7 @@
     <script src="js/parts.js"></script>
     <script src="js/initialize.js"></script>
     <script src="js/customizer.js"></script>
+    <script src="js/database.js"></script>
 
 </head>
 <body>
@@ -68,12 +69,24 @@
         <small>Small Preview:</small><br>
         <textarea id="smallPreview" spellcheck="false"></textarea>
         <p><a class="btn btn-default" id="clipBoard"><span class="glyphicon glyphicon-list-alt"></span> Select Current Smiley</a></p>
+        <p><a class="btn btn-default" id="saveSmiley"><span class="glyphicon glyphicon-pushpin"></span> Save to Database</a></p>
     </div>
     <div id="helpAbout">
         <p class="lead">You're on your way to more emotive smileys! ✌(♥ヮ♥ )</p>
         <p>Welcome to the Kaomoji / Japanese Smiley Customizer! This web page allows you to create and customizer fun, Japanese-style smileys called kaomoji. Kaomoji are made of various UTF-8 characters &mdash; so their appearance can differ depending on: the client who is viewing them, the character set of the website you're posting them on, and way the browse renders them. </p>
         <p>I reccomend that you check the small preview on the bottom-left-hand of this web page to get a feel for how your smiley will look when in its small form. Once you're happy with your kaomoji, click the Select Current Smiley button, right click and copy, then share it with your friends!</p>
         <p>Read more about kaomoji on <a href="http://en.wikipedia.org/wiki/Kaomoji" target="_blank">Wikipedia</a>.</p>
+    </div>
+    <div id="saveDatabase">
+        <p class="lead">Want to add your creation to this site's Kaomoji database?</p>
+        <p>Enter a caption or your name in the field below and click submit!</p>
+        <div style="width:80%; float:left">
+            <input type="text" name="description" class="form-control" placeholder="Woo hoo! Look at me!" required maxlength="60">
+        </div>
+        <div style="width:20%; float:left; padding-left:8px;">
+            <a id="confirmSubmit" class="btn btn-primary">Save to Database</a>
+        </div>
+
     </div>
 </div>
 

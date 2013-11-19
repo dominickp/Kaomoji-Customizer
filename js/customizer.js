@@ -58,6 +58,7 @@ $(document).ready(function(){
         $(".part").removeClass('hold');
         $('#options').html(defaultOption);
         $('#helpAbout').animate({bottom: '-1000px'}, 600);
+        $("#saveDatabase").animate({bottom: '-1000px'}, 600);
     }).children().click(function(e) {
         return false;
     });
