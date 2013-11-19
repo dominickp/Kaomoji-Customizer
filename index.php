@@ -21,18 +21,16 @@
 <body>
 
 <ul id="ticker">
-    <?php foreach($recent as $smiley) echo '<li>'.base64_decode($smiley['smiley']).' "'.$smiley['comment'].'"'.'</li>'; ?>
+    <?php echo $allListItems; ?>
 </ul>
 <div id="toolBar">
     <span class="pull-right">
         © 2013 Dominick Peluso - Project 3 for CSCI E-15 -
         <a class="btn btn-default btn-xs" href="https://github.com/dominickp/p3.kaomoj.in" target="_blank">GitHub</a>
     </span>
-
     <div class="btn-group btn-group-sm">
         <a class="btn btn-default" href="http://dominick.p.elu.so/fun/kaomoji/" target="_blank"><span class="glyphicon glyphicon-tasks"></span> Batch Kaomoji Generator</a>
         <a class="btn btn-default" href="#" id="helpAboutBtn"><span class="glyphicon glyphicon-info-sign"></span> Help / About</a>
-
     </div>
 </div>
 <div id="optionsContainer" class="greyPanel noSelect">
@@ -65,7 +63,7 @@
         </div>
         <input type="hidden" id="smileyInputHidden" name="smiley" value="^_^">
         <div style="width:20%; float:left; padding-left:8px;">
-            <input type="submit" name="submit">
+            <input class="btn btn-primary" type="submit" name="submit">
         </div>
     </form>
 </div>
