@@ -42,6 +42,7 @@ $(document).ready(function(){
         $("#smileyInputHidden").val(getSmiley()); // Update the small preview
         $('.part').tooltip({"placement":"bottom"}); // Reinitialize when the smiley is updated. Due to adding/removing cheecks
         setHoverAction(); // Reinitialize hover action
+        $("#saveDatabase").css("background-color","#222"); // Reset database background color from green
     }
 
     // Declare this variable which will be used to hang on to the cheeck when flipping left to right. Set as inital left cheeck for default.

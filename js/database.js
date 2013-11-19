@@ -19,8 +19,7 @@ $(document).ready(function(){
 
         /* Put the results in a div */
         posting.done(function( data ) {
-            alert('success');
-            $("#bigSmiley").html(data);
+            $("#saveDatabase").delay( 800 ).animate({bottom: '-1000px'}, 600).css("background-color","DarkGreen");
         });
     });
 

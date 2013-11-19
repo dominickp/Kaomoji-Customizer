@@ -7,7 +7,7 @@ $con->setAttribute( PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION );
 $sql = "INSERT INTO smileys(smiley, comment) VALUES(:smiley, :comment)";
 
 $stmt = $con->prepare( $sql );
-$stmt->bindValue( "smiley", $_POST['smiley'], PDO::PARAM_STR );
+$stmt->bindValue( "smiley", base64_encode($_POST['smiley']), PDO::PARAM_STR );
 $stmt->bindValue( "comment", $_POST['description'], PDO::PARAM_STR );
 $stmt->execute();
 
