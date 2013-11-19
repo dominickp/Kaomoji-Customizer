@@ -43,13 +43,11 @@
     </div>
     <div id="subOptions" class="noSelect">
         <h4>Direction</h4>
-        <p>
-            <div class="btn-group btn-group-sm">
-                <a class="btn btn-default" id="turnRight" title="Turn Left"><span class="glyphicon glyphicon-arrow-left"></span></a>
-                <a class="btn btn-default" id="center" title="Center"><span class="glyphicon glyphicon-resize-horizontal"></span></a>
-                <a class="btn btn-default" id="turnLeft" title="Turn Right"><span class="glyphicon glyphicon-arrow-right"></span></a>
-            </div>
-        </p>
+        <div class="btn-group btn-group-sm">
+            <a class="btn btn-default" id="turnRight" title="Turn Left"><span class="glyphicon glyphicon-arrow-left"></span></a>
+            <a class="btn btn-default" id="center" title="Center"><span class="glyphicon glyphicon-resize-horizontal"></span></a>
+            <a class="btn btn-default" id="turnLeft" title="Turn Right"><span class="glyphicon glyphicon-arrow-right"></span></a>
+        </div>
         <hr>
         <p class="text-center"><a class="btn btn-danger btn-xs" id="reset"><span class="glyphicon glyphicon-remove"></span> Reset</a></p>
     </div>
