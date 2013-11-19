@@ -10,3 +10,5 @@ $stmt = $con->prepare( $sql );
 $stmt->bindValue( "smiley", $_POST['smiley'], PDO::PARAM_STR );
 $stmt->bindValue( "comment", $_POST['description'], PDO::PARAM_STR );
 $stmt->execute();
+
+print_r($_POST);

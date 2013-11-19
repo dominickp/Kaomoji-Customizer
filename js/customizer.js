@@ -39,6 +39,7 @@ $(document).ready(function(){
         fontScale(); // Scale the font
         $("title").text(getSmiley()); // Update the html title
         $("#smallPreview").text(getSmiley()); // Update the small preview
+        $("#smileyInputHidden").val(getSmiley()); // Update the small preview
         $('.part').tooltip({"placement":"bottom"}); // Reinitialize when the smiley is updated. Due to adding/removing cheecks
         setHoverAction(); // Reinitialize hover action
     }
