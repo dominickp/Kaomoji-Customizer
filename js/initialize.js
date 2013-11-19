@@ -20,4 +20,9 @@ $(document).ready(function(){
     $('#clipBoard').click(function() {
         selectAllText($("#smallPreview"))
     });
+
+    // Start scroller
+    $(function(){
+        $("ul#ticker").liScroll();
+    });
 });

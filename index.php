@@ -1,3 +1,4 @@
+<?php include("recent.php"); ?>
 <!Doctype HTML>
 <html>
 <head>
@@ -7,15 +8,21 @@
     <link href="//netdna.bootstrapcdn.com/bootstrap/3.0.2/css/bootstrap.min.css" rel="stylesheet">
     <link href='http://fonts.googleapis.com/css?family=Raleway|Passion+One' rel='stylesheet' type='text/css'>
     <link href="weeaboo.css" rel="stylesheet">
+    <link href="li-scroller.css" rel="stylesheet">
     <script src="//netdna.bootstrapcdn.com/bootstrap/3.0.2/js/bootstrap.min.js"></script>
+    <script src="js/jquery.li-scroller.1.0.js"></script>
     <script src="js/parts.js"></script>
     <script src="js/initialize.js"></script>
     <script src="js/customizer.js"></script>
     <script src="js/database.js"></script>
 
+
 </head>
 <body>
 
+<ul id="ticker">
+    <?php foreach($recent as $smiley) echo '<li>'.base64_decode($smiley['smiley']).' "'.$smiley['comment'].'"'.'</li>'; ?>
+</ul>
 <div id="toolBar">
     <span class="pull-right">
         © 2013 Dominick Peluso - Project 3 for CSCI E-15 -
