@@ -24,7 +24,7 @@
     <?php echo $allListItems; ?>
 </ul>
 <div id="toolBar">
-    <span class="pull-right">
+    <span id="secondaryFooter" class="pull-right">
         © 2013 Dominick Peluso - Project 3 for CSCI E-15 -
         <a class="btn btn-default btn-xs" href="https://github.com/dominickp/p3.kaomoj.in" target="_blank">GitHub</a>
     </span>
@@ -69,13 +69,13 @@
     <div class="customizer noSelect">
         <div id="bigSmiley">
             <span class="part left" data-pairType="leftFlair" id="leftFlair" title="Left Flair">&nbsp;</span>
-            <span class="part paired leftArms" data-pairType="leftArm" id="leftArm-left" title="Arms (left facing)">ԅ</span>
+            <span class="part paired leftArms" data-pairType="leftArm" id="leftArm-left" title="Arms (left facing)">ヽ</span>
             <span class="part paired left" data-pairType="bracket" id="leftBracket" title="Brackets">(</span>
             <span class="part paired left" data-pairType="eye" id="leftEye" title="Eyes">•</span>
-            <span class="part" data-pairType="mouth" id="mouth" title="Mouth">ε</span>
+            <span class="part" data-pairType="mouth" id="mouth" title="Mouth">ヮ</span>
             <span class="part paired right" data-pairType="eye" id="rightEye" title="Eyes">•</span>
             <span class="part paired right" data-pairType="cheeck" id="rightCheeck" title="Cheecks">&nbsp;</span>
-            <span class="part paired leftArms" data-pairType="leftArm" id="leftArm-right" title="Arms (left facing)">ԅ</span>
+            <span class="part paired leftArms" data-pairType="leftArm" id="leftArm-right" title="Arms (left facing)">ヽ</span>
             <span class="part paired right" data-pairType="bracket" id="rightBracket" title="Brackets">)</span>
             <span class="part right" data-pairType="rightFlair" id="rightFlair" title="Right Flair">&nbsp;</span>
             <div class="clearfix"> </div>

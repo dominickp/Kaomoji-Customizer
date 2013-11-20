@@ -181,3 +181,14 @@ div#optionsContainer{
     color:#999;
     font-style:italic;
 }
+
+@media (max-width: 1300px) {
+    h1 {font-size: 50px;}
+    .thickText{font-size:40px;}
+}
+@media (max-width: 1000px) {
+    .clickWrapper {padding-top: 2%;}
+    h1 {font-size: 40px;}
+    .thickText{font-size:30px;}
+    #secondaryFooter{display:none;}
+}
