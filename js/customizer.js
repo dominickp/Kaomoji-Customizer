@@ -30,8 +30,6 @@ $(document).ready(function(){
     }
     setHoverAction(); // Initialize hover action
 
-
-
     $("#smallPreview").text(getSmiley()); // Update the small preview
 
     // Do this every time the Smiley changes
@@ -64,7 +62,6 @@ $(document).ready(function(){
     }).children().click(function(e) {
         return false;
     });
-
 
     // When you click on a .part, display some options
     //$(".part").click(function() {
@@ -133,7 +130,6 @@ $(document).ready(function(){
 
     var inUse = false; // If true, locks down the hover preview action
 
-
     var setBigCharacter = function(part){
         selectedType = part.attr("data-pairType"); // Get the part's type
 
@@ -160,7 +156,6 @@ $(document).ready(function(){
             $('#bigSmiley *[data-pairType="' + selectedType + '"]').text(selectedPart);
         }
         smileyUpdate(); // Run smiley update function
-
     }
 
     // Update bigSmiley if you hover over a part
@@ -180,7 +175,6 @@ $(document).ready(function(){
         } else {
             inUse = false;
         }
-
    });
 
     // Turn right and left logic
@@ -195,12 +189,10 @@ $(document).ready(function(){
             }
         }
         $("#rightCheeck").remove(); // Remove the right cheeck if facing left
-
         $(".rightArms").remove();
         $(".leftArms").remove();
         $("#rightBracket").after('<span class="part paired right rightArms" id="rightArm-right" data-pairType="rightArm" title="Arms (right facing)">' + rightArmMemory + '</span>');
         $("#leftBracket").after('<span class="part paired right rightArms" id="rightArm-left" data-pairType="rightArm" title="Arms (right facing)">' + rightArmMemory + '</span>');
-
         smileyUpdate(); // Run smiley update function
    });
 
@@ -215,12 +207,10 @@ $(document).ready(function(){
             }
         }
         $("#leftCheeck").remove(); // Remove the left cheeck if facing left
-
         $(".rightArms").remove();
         $(".leftArms").remove();
         $("#rightBracket").before('<span class="part paired left leftArms" id="leftArm-right" data-pairType="leftArm" title="Arms (left facing)">' + leftArmMemory + '</span>');
         $("#leftBracket").before('<span class="part paired left leftArms" id="leftArm-left" data-pairType="leftArm" title="Arms (left facing)">' + leftArmMemory + '</span>');
-
         smileyUpdate(); // Run smiley update function
    });
 
@@ -233,12 +223,10 @@ $(document).ready(function(){
         if($('#leftCheeck').length == 0){
             $("#leftBracket").after('<span class="part paired left" data-pairType="cheeck" id="leftCheeck" title="Cheecks">'+cheeckMemory+'</span>');
         }
-
         $(".rightArms").remove();
         $(".leftArms").remove();
         $("#leftBracket").before('<span class="part paired left leftArms" id="leftArm-left" data-pairType="leftArm" title="Arms (left facing)">' + leftArmMemory + '</span>');
         $("#rightBracket").after('<span class="part paired right rightArms" id="rightArm-right" data-pairType="rightArm" title="Arms (right facing)">' + rightArmMemory + '</span>');
-
         smileyUpdate(); // Run smiley update function
    });
 
@@ -246,6 +234,5 @@ $(document).ready(function(){
    $("#reset").click(function(){
         location.reload(); // Reset the DOM
    });
-
-
+    
 });
