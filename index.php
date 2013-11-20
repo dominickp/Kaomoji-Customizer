@@ -19,7 +19,16 @@
 
 </head>
 <body>
-
+<!-- Begin Facebook Like button -->
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+		var js, fjs = d.getElementsByTagName(s)[0];
+		if (d.getElementById(id)) return;
+		js = d.createElement(s); js.id = id;
+		js.src = "//connect.facebook.net/en_US/all.js#xfbml=1&appId=589820471038935";
+		fjs.parentNode.insertBefore(js, fjs);
+	}(document, 'script', 'facebook-jssdk'));</script>
+<!-- End Facebook Like button -->
 <ul id="ticker">
     <?php echo $allListItems; ?>
 </ul>
@@ -50,7 +59,8 @@
         </div>
         <hr>
         <p class="text-center"><a class="btn btn-danger btn-xs" id="reset"><span class="glyphicon glyphicon-remove"></span> Reset</a></p>
-    </div>
+		<br><br><br>
+		<div class="fb-like" data-href="http://dominick.p.elu.so/fun/kaomoji" data-layout="box_count" data-action="like" data-show-faces="true" data-share="true"></div>    </div>
 </div>
 <div id="saveDatabase">
     <p class="lead">Want to add your creation to this site's Kaomoji database?</p>

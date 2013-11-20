@@ -234,5 +234,5 @@ $(document).ready(function(){
    $("#reset").click(function(){
         location.reload(); // Reset the DOM
    });
-    
+
 });

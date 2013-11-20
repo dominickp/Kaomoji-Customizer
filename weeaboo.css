@@ -192,3 +192,8 @@ div#optionsContainer{
     .thickText{font-size:30px;}
     #secondaryFooter{display:none;}
 }
+.fb-like{
+    margin: auto;
+    width: 50px;
+    display: block !important;
+}
