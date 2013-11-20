@@ -68,7 +68,7 @@ $(document).ready(function(){
 
     // When you click on a .part, display some options
     //$(".part").click(function() {
-    $("#bigSmiley").on( "click", ".part", function() {
+   $("#bigSmiley").on( "click", ".part", function() {
         var currentPart = $(this);
        // console.log(currentPart.text());
         var optionsBox = $( "div#options" );
@@ -129,7 +129,7 @@ $(document).ready(function(){
         // Set the initial part for reference
         $('.partPicker > li:contains("'+currentPart.text()+'")').addClass("previousPart");
 
-    });
+   });
 
     var inUse = false; // If true, locks down the hover preview action
 
@@ -171,7 +171,7 @@ $(document).ready(function(){
     });
 
     // Locking / toggling mechanism for clicking a part
-    $(document).on( "click", 'ul.partPicker > li', function() {
+   $(document).on( "click", 'ul.partPicker > li', function() {
         setBigCharacter($(this));
         $(this).toggleClass("inUse").siblings().removeClass('inUse');
         $(".previousPart").removeClass('previousPart');
@@ -181,10 +181,10 @@ $(document).ready(function(){
             inUse = false;
         }
 
-    });
+   });
 
     // Turn right and left logic
-    $("#turnLeft").click(function(){
+   $("#turnLeft").click(function(){
         if(cheeckMemory == '' || (!cheeckMemory)) {
             cheeckMemory = $("#rightCheeck").text(); // Update memory (if not blank)
         } else {
@@ -201,11 +201,10 @@ $(document).ready(function(){
         $("#rightBracket").after('<span class="part paired right rightArms" id="rightArm-right" data-pairType="rightArm" title="Arms (right facing)">' + rightArmMemory + '</span>');
         $("#leftBracket").after('<span class="part paired right rightArms" id="rightArm-left" data-pairType="rightArm" title="Arms (right facing)">' + rightArmMemory + '</span>');
 
-
         smileyUpdate(); // Run smiley update function
-    });
+   });
 
-    $("#turnRight").click(function(){
+   $("#turnRight").click(function(){
         if(cheeckMemory == '' || (!cheeckMemory)) {
             cheeckMemory = $("#leftCheeck").text(); // Update memory (if not blank)
         } else {
@@ -223,10 +222,10 @@ $(document).ready(function(){
         $("#leftBracket").before('<span class="part paired left leftArms" id="leftArm-left" data-pairType="leftArm" title="Arms (left facing)">' + leftArmMemory + '</span>');
 
         smileyUpdate(); // Run smiley update function
-    });
+   });
 
     // Center
-    $("#center").click(function(){
+   $("#center").click(function(){
         // Check to see if that spacer is already there, if so, don't add another one.
         if($('#rightCheeck').length == 0){
             $("#rightBracket").before('<span class="part paired right" data-pairType="cheeck" id="rightCheeck" title="Cheecks">'+cheeckMemory+'</span>');
@@ -241,12 +240,12 @@ $(document).ready(function(){
         $("#rightBracket").after('<span class="part paired right rightArms" id="rightArm-right" data-pairType="rightArm" title="Arms (right facing)">' + rightArmMemory + '</span>');
 
         smileyUpdate(); // Run smiley update function
-    });
+   });
 
     // Reset button
-    $("#reset").click(function(){
+   $("#reset").click(function(){
         location.reload(); // Reset the DOM
-    });
+   });
 
 
 });
