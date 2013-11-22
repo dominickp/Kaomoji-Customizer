@@ -2,7 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="899f6b57-1d5a-41cb-a3a7-e615bad30ace" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
+      <change type="MOVED" beforePath="C:\wamp\www\p3.kaomoj.in\li-scroller.css" afterPath="$PROJECT_DIR$/css/li-scroller.css" />
+      <change type="MOVED" beforePath="C:\wamp\www\p3.kaomoj.in\weeaboo.css" afterPath="$PROJECT_DIR$/css/weeaboo.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.php" afterPath="$PROJECT_DIR$/index.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="p3.kaomoj.in.iws" />
@@ -35,10 +37,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.php" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="index.php" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/index.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="70" column="14" selection-start="2898" selection-end="3552" vertical-scroll-proportion="-19.4" vertical-offset="635" max-vertical-offset="1824">
+            <state line="27" column="58" selection-start="1310" selection-end="1310" vertical-scroll-proportion="0.5475285" vertical-offset="0" max-vertical-offset="1792">
               <folding />
             </state>
           </provider>
@@ -72,7 +74,7 @@
         </entry>
       </file>
       <file leaf-file-name="weeaboo.css" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/weeaboo.css">
+        <entry file="file://$PROJECT_DIR$/css/weeaboo.css">
           <provider selected="true" editor-type-id="text-editor">
             <state line="197" column="29" selection-start="5558" selection-end="5558" vertical-scroll-proportion="0.0" vertical-offset="2370" max-vertical-offset="3264">
               <folding />
@@ -89,10 +91,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name=".gitignore" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name=".gitignore" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/.gitignore">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="217" column="6" selection-start="2658" selection-end="2658" vertical-scroll-proportion="0.88391775" vertical-offset="2741" max-vertical-offset="3584">
+            <state line="217" column="6" selection-start="2658" selection-end="2658" vertical-scroll-proportion="0.0" vertical-offset="2741" max-vertical-offset="3584">
               <folding />
             </state>
           </provider>
@@ -138,8 +140,8 @@
         <option value="$PROJECT_DIR$/js/parts.js" />
         <option value="$PROJECT_DIR$/js/customizer.js" />
         <option value="$PROJECT_DIR$/weeaboo.css" />
-        <option value="$PROJECT_DIR$/index.php" />
         <option value="$PROJECT_DIR$/.gitignore" />
+        <option value="$PROJECT_DIR$/index.php" />
       </list>
     </option>
   </component>
@@ -208,6 +210,20 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="p3.kaomoj.in" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="p3.kaomoj.in" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="css" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
       <pane id="Scope" />
@@ -221,6 +237,11 @@
     <property name="FullScreen" value="false" />
     <property name="options.splitter.details.proportions" value="0.2" />
     <property name="options.searchVisible" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\wamp\www\p3.kaomoj.in\css" />
+    </key>
   </component>
   <component name="RunManager">
     <configuration default="true" type="PHPUnitRunConfigurationType" factoryName="PHPUnit">
@@ -369,7 +390,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/weeaboo.css">
+    <entry file="file://$PROJECT_DIR$/css/weeaboo.css">
       <provider selected="true" editor-type-id="text-editor">
         <state line="197" column="29" selection-start="5558" selection-end="5558" vertical-scroll-proportion="0.0" vertical-offset="2370" max-vertical-offset="3264">
           <folding />
@@ -383,16 +404,16 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/index.php">
+    <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="70" column="14" selection-start="2898" selection-end="3552" vertical-scroll-proportion="-19.4" vertical-offset="635" max-vertical-offset="1824">
+        <state line="217" column="6" selection-start="2658" selection-end="2658" vertical-scroll-proportion="0.0" vertical-offset="2741" max-vertical-offset="3584">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/.gitignore">
+    <entry file="file://$PROJECT_DIR$/index.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="217" column="6" selection-start="2658" selection-end="2658" vertical-scroll-proportion="0.88391775" vertical-offset="2741" max-vertical-offset="3584">
+        <state line="27" column="58" selection-start="1310" selection-end="1310" vertical-scroll-proportion="0.5475285" vertical-offset="0" max-vertical-offset="1792">
           <folding />
         </state>
       </provider>

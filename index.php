@@ -7,27 +7,25 @@
     <script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
     <link href="//netdna.bootstrapcdn.com/bootstrap/3.0.2/css/bootstrap.min.css" rel="stylesheet">
     <link href='http://fonts.googleapis.com/css?family=Raleway|Passion+One' rel='stylesheet' type='text/css'>
-    <link href="weeaboo.css" rel="stylesheet">
-    <link href="li-scroller.css" rel="stylesheet">
+    <link href="css/weeaboo.css" rel="stylesheet">
+    <link href="css/li-scroller.css" rel="stylesheet">
     <script src="//netdna.bootstrapcdn.com/bootstrap/3.0.2/js/bootstrap.min.js"></script>
     <script src="js/jquery.li-scroller.1.0.js"></script>
     <script src="js/parts.js"></script>
     <script src="js/initialize.js"></script>
     <script src="js/customizer.js"></script>
     <script src="js/database.js"></script>
-
-
 </head>
 <body>
 <!-- Begin Facebook Like button -->
-<div id="fb-root"></div>
-<script>(function(d, s, id) {
-		var js, fjs = d.getElementsByTagName(s)[0];
-		if (d.getElementById(id)) return;
-		js = d.createElement(s); js.id = id;
-		js.src = "//connect.facebook.net/en_US/all.js#xfbml=1&appId=589820471038935";
-		fjs.parentNode.insertBefore(js, fjs);
-	}(document, 'script', 'facebook-jssdk'));</script>
+	<div id="fb-root"></div>
+	<script>(function(d, s, id) {
+			var js, fjs = d.getElementsByTagName(s)[0];
+			if (d.getElementById(id)) return;
+			js = d.createElement(s); js.id = id;
+			js.src = "//connect.facebook.net/en_US/all.js#xfbml=1&appId=589820471038935";
+			fjs.parentNode.insertBefore(js, fjs);
+		}(document, 'script', 'facebook-jssdk'));</script>
 <!-- End Facebook Like button -->
 <ul id="ticker">
     <?php echo $allListItems; ?>
