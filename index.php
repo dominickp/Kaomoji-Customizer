@@ -15,6 +15,7 @@
     <script src="js/initialize.js"></script>
     <script src="js/customizer.js"></script>
     <script src="js/database.js"></script>
+    <script src="js/randomize.js"></script>
 </head>
 <body>
 <!-- Begin Facebook Like button -->
@@ -56,7 +57,8 @@
             <a class="btn btn-default" id="turnLeft" title="Turn Right"><span class="glyphicon glyphicon-arrow-right"></span></a>
         </div>
         <hr>
-        <p class="text-center"><a class="btn btn-danger btn-xs" id="reset"><span class="glyphicon glyphicon-remove"></span> Reset</a></p>
+        <p class="text-center"><a class="btn btn-warning btn-sm" id="randomize"><span class="glyphicon glyphicon-random"></span>&nbsp; Randomize!</a></p>
+        <p class="text-center"><a class="btn btn-danger btn-xs" id="reset"><span class="glyphicon glyphicon-remove"></span>&nbsp; Reset</a></p>
 		<br><br><br>
 		<div class="fb-like" data-href="http://dominick.p.elu.so/fun/kaomoji" data-layout="box_count" data-action="like" data-show-faces="true" data-share="true"></div>    </div>
 </div>

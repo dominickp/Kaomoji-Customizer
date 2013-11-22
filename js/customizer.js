@@ -43,6 +43,8 @@ $(document).ready(function(){
         $("#saveDatabase").css("background-color","#222"); // Reset database background color from green
     }
 
+    window.smileyUpdate=smileyUpdate; // Send smileyUpdate to window so I can use it later
+
     // Declare this variable which will be used to hang on to the cheeck when flipping left to right. Set as inital left cheeck for default.
     var cheeckMemory = $("#rightCheeck").text();
     var leftArmMemory = $("#leftArm-left").text();
